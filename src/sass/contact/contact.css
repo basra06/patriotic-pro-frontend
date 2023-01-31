@@ -1,0 +1,120 @@
+.contact {
+  width: 100%;
+  overflow-x: hidden;
+}
+.contact h2 {
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px;
+  color: black;
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  text-transform: capitalize;
+}
+.contact .form-floating label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.contact .form-floating label .fw-bold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.contact .form-floating .fw-bold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+}
+.contact .form-floating textarea {
+  height: 200px;
+}
+.contact p {
+  color: #333333;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+.contact .butt .btn-danger {
+  background: #D42443;
+  border-radius: 10px;
+}
+.contact .butt .btn-danger:hover {
+  background: #e73b5b;
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .contact h2 {
+    text-align: center;
+    margin: 5px auto;
+    padding: 0px;
+    color: black;
+    font-family: "poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  .contact p {
+    color: #333333;
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 2px 1px;
+    text-transform: uppercase;
+  }
+  .contact .form-floating label {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+  }
+  .contact .form-floating label .fw-bold {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+  }
+  .contact .form-floating .fw-bold {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+  }
+  .contact .form-floating textarea {
+    height: 200px;
+  }
+  .contact .butt .btn-danger {
+    background: #D42443;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .contact .butt .btn-danger:hover {
+    background: #e73b5b;
+  }
+}/*# sourceMappingURL=contact.css.map */

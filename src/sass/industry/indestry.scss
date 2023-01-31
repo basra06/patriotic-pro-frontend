@@ -1,0 +1,251 @@
+.industrylist {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 30px auto;
+    padding: 0px;
+    background-color: white;
+
+    .slider{
+        margin: 15px auto;
+    }
+
+    
+
+
+
+    .textdata {
+        text-align: center;
+
+        h2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 34px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #333333;
+
+        }
+
+
+        p {
+
+            color: #333333;
+            padding: 3px;
+            text-align: center;
+            margin: 10px 2px;
+            font-weight: bold;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: uppercase;
+
+        }
+
+
+            img {
+                width: 56px;
+                height: 58px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 1px;
+
+
+
+
+            }
+
+           
+
+
+
+        
+
+
+
+    }
+
+
+    .p-2 {
+        cursor: pointer;
+
+    }
+
+    .card {
+        margin: 0px auto;
+        width: 80px;
+        height: 80px;
+        background: #163791;
+        border-radius: 50%;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        text-align: center;
+        // padding: 3px;
+        justify-content: center;
+
+        img {
+            width: 56px;
+            height: 58px;
+            border-radius: 50%;
+            text-align: center;
+            padding: 2px;
+
+
+
+
+        }
+
+        &:hover {
+            background-color: #D42443;
+            transition: 0.2s ease-in-out;
+        }
+
+
+
+    }
+
+    .texthead {
+        margin: 4px auto;
+
+        p {
+
+            margin: 10px auto;
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: capitalize;
+            display: flex;
+            justify-content: center;
+
+           
+        }
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    .industrylist {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 00px auto;
+        padding: 0px;
+        background-color: white;
+  
+
+        .slider{
+            margin: 5px auto;
+        }
+
+
+        .textdata {
+            text-align: center;
+
+            h2 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #333333;
+
+            }
+
+
+            p {
+
+                color: #333333;
+                padding: 1px;
+                text-align: center;
+                margin: 5px 1px;
+                font-weight: bold;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 25px;
+                text-transform: uppercase;
+
+            }
+
+
+
+        }
+
+
+        .p-2 {
+            cursor: pointer;
+
+        }
+
+        .card {
+            margin: 0px auto;
+            width: 80px;
+            height: 80px;
+            background: #163791;
+            border-radius: 50%;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            text-align: center;
+            // padding: 3px;
+            justify-content: center;
+
+       
+
+                img {
+                    width: 56px;
+                    height: 58px;
+                    border-radius: 50%;
+                    text-align: center;
+                    padding: 1px;
+
+
+
+
+                }
+
+                &:hover {
+                    background-color: #D42443;
+                    transition: 0.2s ease-in-out;
+                }
+
+
+
+            }
+
+            .texthead {
+                margin: 4px auto;
+
+                p {
+
+                    margin: 10px auto;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    display: flex;
+                    justify-content: center;
+
+                    &:hover {
+                        font-size: 18px;
+                        transition: 0.2s;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+
+

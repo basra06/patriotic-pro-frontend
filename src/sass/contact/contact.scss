@@ -1,0 +1,153 @@
+.contact {
+    width: 100%;
+    overflow-x: hidden;
+
+    h2 {
+        text-align: center;
+        margin: 10px auto;
+        padding: 5px;
+        color: black;
+        font-family: 'poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        text-transform: capitalize;
+    }
+
+    .form-floating {
+        label{
+            font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+color: #333333;
+.fw-bold{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+}
+
+
+        }
+        .fw-bold {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #333333;
+        }
+        textarea{
+            height: 200px;
+        }
+
+    }
+
+    p {
+        color: #333333;
+        text-align: center;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+
+    }
+
+
+    .butt{
+        .btn-danger{
+            background: #D42443;
+            border-radius: 10px;
+            &:hover{
+                background: #e73b5b;
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .contact {
+        width: 100%;
+        overflow-x: hidden;
+    
+        h2 {
+            text-align: center;
+            margin: 5px auto;
+            padding: 0px;
+            color: black;
+            font-family: 'poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+        p {
+            color: #333333;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 2px 1px;
+            text-transform: uppercase;
+    
+        }
+    
+    
+        .form-floating {
+            label{
+                font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+    .fw-bold{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #333333;
+    }
+    
+    
+            }
+            .fw-bold {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                color: #333333;
+            }
+            textarea{
+                height: 200px;
+            }
+    
+        }
+    
+      
+    
+        .butt{
+            .btn-danger{
+                background: #D42443;
+                border-radius: 10px;
+                font-size: 14px;
+                &:hover{
+                    background: #e73b5b;
+                }
+            }
+        }
+    
+    }
+
+}

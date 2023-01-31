@@ -1,0 +1,176 @@
+.states {
+
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background: #F4F4F4;
+
+
+    .row {
+
+        h6{
+            text-align: center;
+            color: #D42443;
+            text-transform: capitalize;
+            cursor: pointer;
+            display: none;
+            &:hover{
+                color: #e44a66;
+            }
+        }
+
+        .text {
+            text-align: center;
+            margin: 35px auto;
+
+            h2 {
+                text-align: center;
+                font-size: 34px;
+                font-family: 'Poppins';
+                 font-style: normal;
+                margin: 10px auto;
+                text-transform: capitalize;
+                color:black;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: center;
+                margin: 10px auto;
+                color: #333;
+                font-size: 16px;
+                font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;        
+                
+            }
+        }
+
+        span {
+
+            .image-fluid {
+                width: '24px';
+                height: '16px';
+            }
+
+            a {
+                color: '#163791';
+                font-size: 16px;
+                font-family: sans-serif;
+                font-weight: 400;
+                margin: 1px 1px;
+                text-decoration: none;
+                text-transform: capitalize;
+
+                &:hover {
+                    color: #D42443;
+                    ;
+                }
+
+            }
+        }
+
+
+
+
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+
+    .states {
+
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        background: #F4F4F4;
+    
+    
+        .row {
+
+            h6{
+                text-align: center;
+                color: #D42443;
+                text-transform: capitalize;
+                cursor: pointer;
+                display: block;
+                &:hover{
+                    color: #e44a66;
+                    text-decoration: underline;
+                }
+            }
+    
+            .text {
+                text-align: center;
+                margin: 10px auto;
+    
+                h2 {
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: 'Poppins';
+                     font-style: normal;
+                    margin: 13px auto;
+                    text-transform: capitalize;
+                    color:black;
+                    font-weight: 700;
+
+                }
+    
+                p {
+                    text-align: center;
+                    margin: 10px auto;
+                    color: #333;
+                    font-weight: 600;
+                    font-size: 14px;
+                    font-size: 16px;
+                    font-family: 'Open Sans';
+                font-style: normal;       
+                    padding: 0px;
+                }
+            }
+    
+            span {
+    
+                .image-fluid {
+                    width: '24px';
+                    height: '16px';
+                }
+    
+                a {
+                    color: '#163791';
+                    font-size: 16px;
+                    font-family: sans-serif;
+                    font-weight: 400;
+                    margin: 1px 1px;
+                    text-decoration: none;
+                    text-transform: capitalize;
+    
+                    &:hover {
+                        color: #D42443;
+                        ;
+                    }
+    
+                }
+            }
+    
+    
+    
+    
+        }
+    
+    
+    
+    }
+
+}
+
+
+
