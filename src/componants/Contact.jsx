@@ -7,22 +7,24 @@ export const Contact = () => {
     <>
 
       <div className="contact ">
-        <div className="container mt-5 mb-5">
+        <div className="container">
 
-          <div className="row mt-3 mb-3">
+          <div className="row ">
             <h2>Get in touch</h2>
-            <p>You love America, Hire a Pro that does too. Free for Pros, Free for Homeowners.</p>
+          <div className="para">
+          <p >You love America, Hire a Pro that does too. Free for Pros, Free for Homeowners.</p>
+          </div>
 
 
 
-            <div className="col-lg-5 col-md-6 col-sm-12 mt-4 ">
+            <div className="col-lg-5 col-md-6 col-sm-12  ">
               <div className="image ">
                 <img style={{ width: '100%' }} src={contact} />
               </div>
             </div>
 
 
-            <div className="col-lg-7 col-md-6 col-sm-12 mt-4 p-2">
+            <div className="col-lg-7 col-md-6 col-sm-12 p-2">
               <div className="form">
 
                 <div className="row p-1 m-1">

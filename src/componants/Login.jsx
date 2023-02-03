@@ -1,40 +1,19 @@
 import React from 'react'
-import "../sass/infobanner/info.css"
-import "../sass/global/global.css"
 import logomodal from "../assets/images/navbarimges/Transparent-logo 2.png"
+import { Banner } from './Banner'
+import { Footer } from './Footer'
+import { Navbar } from './Navbar'
+// import { Link, Outlet, useLocation } from "react-router-dom";
 
-export const Infobanner = () => {
+export const Login = () => {
+    // const { state = {} } = location;
+//   const { modal } = state;
+// const location=useLocation();
   return (
     <>
-    <div className='infobanner ' >
-        <div className="container">
-            <div className="row ">
-                <div className="col-lg-10 mx-auto ">
-                <div className="tex">
-                <h1 className='text-center text-white '>Choose a better way to work.</h1>
-                <p className='text-center'>You love America, Hire a Pro ove America, Hire a that does too.  a Pro that does too Free for Pros, Free for Homeowners.</p>
-
-              <div className='but'>
-              <button data-bs-toggle="modal" data-bs-target="#loginmodal" className='btn btn-danger'>Login</button>
-              </div>
-               
-                </div>
-                </div>
-            
-            </div>
-        </div>
-
-
-
-     </div>
-
-
-
-
-
-
-
-     <div className="modal fade " id="loginmodal" tabindex="-1" >
+    <Navbar/>
+    <Banner/>
+    {/* <div className="modal fade " id="loginmodal" tabindex="-1" >
         <div className="modal-dialog ">
           <div className="modal-content">
             <div className="modal-header ">
@@ -70,19 +49,12 @@ export const Infobanner = () => {
           </div>
         </div>
 
-      </div>
+      </div> */}
+      <h1>hamza</h1>
 
-
-
-
-
-
-
+      <Footer/>
+    
+    
     </>
-
-
-
-
-
   )
 }

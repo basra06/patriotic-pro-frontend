@@ -3,15 +3,22 @@
   overflow-x: hidden;
   background-color: #163791;
 }
+.footer .row {
+  margin-top: 59px;
+  margin-bottom: 40px;
+}
 .footer .row p {
+  margin-top: 25px;
+  margin-bottom: 25px;
   text-align: center;
-  color: white;
-  margin: 5px auto;
-  padding: 2px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
+  line-height: 200%;
+  /* identical to box height, or 32px */
+  color: #FFFFFF;
+  opacity: 0.85;
 }
 .footer .row .text-center a {
   padding: 6px;
@@ -33,22 +40,38 @@
   color: #163791;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .footer {
     width: 100%;
     overflow-x: hidden;
     background-color: #163791;
     padding: 1px;
   }
-  .footer .row p {
-    text-align: center;
-    color: white;
-    margin: 5px 5px;
-    padding: 0px 4px;
+  .footer .row {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .footer .row .image img {
+    margin-top: 60px;
+    width: 216px;
+    height: 32px;
+  }
+  .footer .row .para p {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
+    line-height: 200%;
+    margin-top: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* or 28px */
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.85;
+  }
+  .footer .row .text-center {
+    margin-bottom: 50px;
   }
   .footer .row .text-center a {
     padding: 3px;

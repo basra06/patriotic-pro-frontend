@@ -6,18 +6,20 @@ export const Footer = () => {
     <>
     
     <div className="footer">
-        <div className="container mt-5 mb-5">
+        <div className="container ">
              <div className="row">
-                <div className="image text-center mt-3 p-2">
+                <div className="image text-center">
                     <img src={logo}/>
                 </div>
-                <p>© 2023 Patrioticpro.com | Privacy Policy | Cookies Policy | Terms of Service</p>
+               <div className="para">
+               <p>© 2023 Patrioticpro.com | Privacy Policy | Cookies Policy | Terms of Service</p>
+               </div>
                  
                    
 
 
 
-  <div className="mb-2 text-center mt-2">
+  <div className=" text-center">
      
       <a
         className="btn text-white btn-floating m-1"

@@ -1,12 +1,13 @@
 .industrylist {
   width: 100%;
   overflow-x: hidden;
-  margin: 30px auto;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-color: white;
 }
-.industrylist .slider {
-  margin: 15px auto;
+.industrylist .container .row {
+  margin-bottom: 100px;
+  margin-top: 10px;
 }
 .industrylist .textdata {
   text-align: center;
@@ -16,22 +17,24 @@
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
+  margin-top: 85px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
 }
 .industrylist .textdata p {
-  color: #333333;
-  padding: 3px;
-  text-align: center;
-  margin: 10px 2px;
-  font-weight: bold;
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   line-height: 25px;
+  margin-top: 15px;
+  text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #333333;
 }
 .industrylist .textdata img {
   width: 56px;
@@ -40,13 +43,10 @@
   text-align: center;
   padding: 1px;
 }
-.industrylist .p-2 {
-  cursor: pointer;
-}
 .industrylist .card {
   margin: 0px auto;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background: #163791;
   border-radius: 50%;
   display: flex;
@@ -56,8 +56,8 @@
   justify-content: center;
 }
 .industrylist .card img {
-  width: 56px;
-  height: 58px;
+  width: 62px;
+  height: 64px;
   border-radius: 50%;
   text-align: center;
   padding: 2px;
@@ -70,43 +70,47 @@
   margin: 4px auto;
 }
 .industrylist .texthead p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
   margin: 10px auto;
-  color: black;
-  font-weight: bold;
-  font-size: 16px;
-  text-transform: capitalize;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .industrylist {
     width: 100%;
     overflow-x: hidden;
-    margin: 0px auto;
-    padding: 0px;
     background-color: white;
-  }
-  .industrylist .slider {
-    margin: 5px auto;
   }
   .industrylist .textdata {
     text-align: center;
+    margin-top: 40px;
   }
   .industrylist .textdata h2 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    text-align: center;
+    line-height: 27px;
     text-transform: uppercase;
     color: #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
   }
   .industrylist .textdata p {
     color: #333333;
     padding: 1px;
     text-align: center;
-    margin: 5px 1px;
+    line-height: 160%;
+    margin-left: 23px;
+    margin-right: 23px;
     font-weight: bold;
     font-family: "Open Sans";
     font-style: normal;
@@ -115,46 +119,48 @@
     line-height: 25px;
     text-transform: uppercase;
   }
-  .industrylist .p-2 {
-    cursor: pointer;
+  .industrylist .container .row {
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
-  .industrylist .card {
-    margin: 0px auto;
-    width: 80px;
-    height: 80px;
+  .industrylist .slider {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 110px;
+  }
+  .industrylist .slider .card {
     background: #163791;
-    border-radius: 50%;
-    display: flex;
+    border-radius: 100px;
     cursor: pointer;
     align-items: center;
     text-align: center;
     justify-content: center;
   }
-  .industrylist .card img {
-    width: 56px;
-    height: 58px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 1px;
+  .industrylist .slider .card img {
+    width: 55.8px;
+    height: 47.7px;
   }
-  .industrylist .card:hover {
+  .industrylist .slider .card:hover {
     background-color: #D42443;
     transition: 0.2s ease-in-out;
   }
-  .industrylist .texthead {
-    margin: 4px auto;
+  .industrylist .slider .card:hover {
+    color: #D42443;
   }
   .industrylist .texthead p {
-    margin: 10px auto;
-    color: black;
-    font-weight: bold;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
     font-size: 16px;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: center;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
   }
   .industrylist .texthead p:hover {
-    font-size: 18px;
+    font-size: 16px;
+    color: #D42443;
     transition: 0.2s;
   }
 }/*# sourceMappingURL=indestry.css.map */

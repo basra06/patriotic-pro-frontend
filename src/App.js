@@ -6,6 +6,10 @@ import { Home } from "./Pages/Home";
 import "../src/sass/global/global.css"
 import { Search } from "./componants/Search";
 import { Searchpage } from "./Pages/Searchpage";
+import { Login } from "./componants/Login";
+import { Enquire } from "./Pages/Enquire";
+
+
 
 function App() {
   return (
@@ -14,6 +18,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>} exact />
       <Route path="/search" element={<Searchpage/>} />
+      <Route path="/login" element={<Login/>} />
+      <Route path="/enquiry" element={<Enquire/>} />
     </Routes>
     </>
   );

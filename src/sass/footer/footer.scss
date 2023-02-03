@@ -4,92 +4,140 @@
     background-color: #163791;
 
     .row {
+        margin-top: 59px;
+        margin-bottom: 40px;
+
         p {
+            margin-top: 25px;
+            margin-bottom: 25px;
             text-align: center;
-            color: white;
-            margin: 5px auto;
-            padding: 2px;
+
+
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
+            line-height: 200%;
+            /* identical to box height, or 32px */
+
+
+            color: #FFFFFF;
+
+            opacity: 0.85;
 
 
         }
-        .text-center{
-            a{
+
+        .text-center {
+            a {
                 padding: 6px;
-                background-color:  #163791;;
+                background-color: #163791;
+                ;
                 border-radius: 50%;
                 border: 1px solid white;
                 cursor: pointer;
-             i{
-                font-size: 15px;
-                width:20px;
-                &:hover{
-                    background-color: white;
-                    color:#163791
-                    
-                 } 
-                
-            }
-            &:hover{
-                background-color: white;
-                color:#163791
-                
-             }
 
-            
+                i {
+                    font-size: 15px;
+                    width: 20px;
+
+                    &:hover {
+                        background-color: white;
+                        color: #163791
+                    }
+
+                }
+
+                &:hover {
+                    background-color: white;
+                    color: #163791
+                }
+
+
             }
         }
     }
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .footer {
         width: 100%;
         overflow-x: hidden;
         background-color: #163791;
         padding: 1px;
-    
+
         .row {
-            p {
-                text-align: center;
-                color: white;
-                margin: 5px 5px;
-                padding:0px 4px ;
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 14px;
-    
-    
+            margin-bottom:0px;
+           margin-top: 0px;
+        
+            .image {
+                img {
+                    margin-top: 60px;
+                    width: 216px;
+                    height: 32px;
+                }
             }
-            .text-center{
-                a{
+
+            .para {
+                p {
+                    // text-align: center;
+                    // color: white;
+                    // margin-top: 10px;
+                    // margin-left: 25px;
+                    // margin-right: 25px;
+                    // font-family: 'Open Sans';
+                    // font-style: normal;
+                    // font-weight: 600;
+                    // font-size: 14px;
+
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 200%;
+                    margin-top: 0px;
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    /* or 28px */
+                    
+                    text-align: center;
+                    
+                    color: #FFFFFF;
+                    
+                    opacity: 0.85;
+
+
+                }
+            }
+
+            .text-center {
+                margin-bottom: 50px;
+                a {
                     padding: 3px;
-                    background-color:  #163791;;
+                    background-color: #163791;
+                    ;
                     border-radius: 50%;
                     border: 1px solid white;
                     cursor: pointer;
-                 i{
-                    font-size: 16px;
-                    width:20px;
-                    &:hover{
+
+                    i {
+                        font-size: 16px;
+                        width: 20px;
+
+                        &:hover {
+                            background-color: white;
+                            color: #163791
+                        }
+
+                    }
+
+                    &:hover {
                         background-color: white;
-                        color:#163791
-                        
-                     } 
-                    
-                }
-                &:hover{
-                    background-color: white;
-                    color:#163791
-                    
-                 }
-    
-                
+                        color: #163791
+                    }
+
+
                 }
             }
         }

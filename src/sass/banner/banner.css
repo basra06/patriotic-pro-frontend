@@ -3,21 +3,17 @@
   padding: 0px;
   overflow-x: hidden;
   max-width: 100%;
-  height: auto;
   background-image: url("../../assets/images/bannerimages/Group 134.png");
   background-position: center;
 }
-.banner .row .tex {
-  margin: 40px 0px;
-  text-align: center;
+.banner .bannersection {
+  margin-top: 250px;
 }
-.banner .row .tex .logoimage {
+.banner .bannersection .row .tex .logoimage {
   display: none;
 }
-.banner .row .tex h1 {
-  padding: 20px auto;
+.banner .bannersection .row .tex h1 {
   font-family: "Poppins";
-  font-style: normal;
   font-weight: 700;
   font-size: 42px;
   line-height: 63px;
@@ -25,31 +21,48 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.banner .row .tex p {
+.banner .bannersection .row .tex p {
   text-align: center;
   color: white;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 25px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.banner .row .conatiner .mt-5 {
-  display: flex;
-  justify-content: space-around;
-  border-radius: 50px;
-  background-color: #fff;
+.banner .bannersection .row .conatiner {
+  margin-bottom: 157px;
+  margin-top: 40px;
 }
-.banner .row .conatiner .mt-5 .form {
-  width: 200px;
-  border-radius: 4px;
+.banner .bannersection .row .conatiner .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 100px;
+  flex-wrap: wrap;
+}
+.banner .bannersection .row .conatiner .options .first {
+  border-right: 1px solid #e3e3e3;
+  flex-grow: 4;
+  flex-basis: 35%;
+  margin: 0px 10px;
+  padding: 0px 5px;
+}
+.banner .bannersection .row .conatiner .options .first .form-select {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  width: 100%;
+  flex-basis: 30%;
+  border-radius: 0px solid white;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: #0b0b0c;
-  border: none;
   background-color: white;
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -59,20 +72,205 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  font-family: "Open Sans";
 }
-.banner .row .conatiner .mt-5 .btn-danger {
+.banner .bannersection .row .conatiner .options .seacond {
+  flex-grow: 4;
+  flex-basis: 35%;
+  margin: 0px 10px;
+  padding: 0px 5px;
+}
+.banner .bannersection .row .conatiner .options .seacond .form-select {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  width: 100%;
+  border-radius: 0px solid white;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 10px 12px;
   border: none;
-  width: 300px;
-  height: 100%;
-  border-radius: 10px 10px 10px 10px;
-  background-color: #D42443;
-  color: white;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "Open Sans";
 }
-.banner .row .conatiner .mt-5 .btn-danger .go {
+.banner .bannersection .row .conatiner .options .but {
+  flex-grow: 3;
+  flex-basis: 15%;
+  height: 65px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  justify-content: center;
+  background-color: #D42443;
+  border-radius: 0px 100px 100px 0px;
+}
+.banner .bannersection .row .conatiner .options .but .btn-danger {
+  border: none;
+  width: auto;
+  height: 100%;
+  border-radius: 15px 100px 100px 15px;
+  background-color: #D42443;
+}
+.banner .bannersection .row .conatiner .options .but .btn-danger a {
   text-decoration: none;
   color: white;
+  margin: 0px 10px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
 }
-.banner .row .conatiner .mt-5 .btn-danger:hover {
-  background-color: #e73b5b;
+.banner .bannersection .row .conatiner .options .but .btn-danger a:hover {
   transition: 0.2s;
+  color: white;
+  margin: 0px 10px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    max-width: 100%;
+    background-image: url("../../assets/images/bannerimages/Group 134.png");
+    background-position: center;
+  }
+  .banner .bannersection {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .banner .bannersection .row .tex .logoimage {
+    display: none;
+    text-align: center;
+  }
+  .banner .bannersection .row .tex h1 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .banner .bannersection .row .tex p {
+    margin-top: 10px;
+    margin-left: 42px;
+    margin-right: 42px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    color: #FFFFFF;
+  }
+  .banner .bannersection .row .conatiner {
+    margin-top: 19px;
+    margin-bottom: 130px;
+  }
+  .banner .bannersection .row .conatiner .options {
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .banner .bannersection .row .conatiner .options .first {
+    flex-basis: 100%;
+    margin: 5px auto;
+    border: none;
+  }
+  .banner .bannersection .row .conatiner .options .first .form-select {
+    border-radius: 0px;
+    border: none;
+    padding: 5px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    flex-basis: 30%;
+    border-radius: 100px white;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 10px 12px;
+    border: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  .banner .bannersection .row .conatiner .options .seacond {
+    flex-basis: 100%;
+    margin: 0px 3px;
+    display: none;
+  }
+  .banner .bannersection .row .conatiner .options .seacond .form-select {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    border-radius: 0px solid white;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 10px 12px;
+    border: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    font-family: "Open Sans";
+  }
+  .banner .bannersection .row .conatiner .options .but {
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 0;
+    border-radius: 10px;
+    width: 95px;
+    height: 38px;
+  }
+  .banner .bannersection .row .conatiner .options .but .btn-danger {
+    background-color: #D42443;
+    border-radius: 10px;
+    width: 95px;
+    height: 38px;
+  }
+  .banner .bannersection .row .conatiner .options .but .btn-danger a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "Open Sans";
+  }
+  .banner .bannersection .row .conatiner .options .but .btn-danger a:hover {
+    transition: 0.2s;
+    color: white;
+    font-style: 14px;
+  }
 }/*# sourceMappingURL=banner.css.map */

@@ -1,37 +1,36 @@
 import React, { useEffect, useState } from 'react'
 import "../sass/navbar/navbar.css"
-import logo from "../assets/images/navbarimges/logo.png"
+import logo from "../assets/images/navbarimges/Transparent-logo 2.png"
+import logo2 from "../assets/images/navbarimges/Transparent-logo 1 (1).png"
 import {NavLink} from "react-router-dom"
 import flag from "../assets/images/navbarimges/flag.png"
 import logomodal from "../assets/images/navbarimges/Transparent-logo 2.png"
 import axios from 'axios';
 export const Navbar = () => {
   const [data, setdata] = useState([]);
-  const [statevalue, setstatevalue] = useState("");
-  console.log(statevalue)
-
+  const [statevalue, setstatevalue] = useState();
   const [active, setactive] = useState(true);
+  const[flag,setflag]=useState();
+  const setFlagState=(value)=>{
+    setstatevalue(value);
+    let flagData=data&&data.filter(x=>x.state===value)
+    flagData&& setflag(flagData[0])
+  }
 
 
-
-
-
-
-
-
+  
   useEffect(() => {
+     
 
      getStat()
   }, []);
   const getStat = () => {
     axios.get('https://raw.githubusercontent.com/CivilServiceUSA/us-states/master/data/states.json')
       .then(function (response) {
-        // setdata(response.data);
-        console.log(response.data);
-        console.log(data);
-        setdata(response.data);
-        console.log(data);
-
+       let defalt=response.data;
+       console.log(response.data[0],"skkska")
+       setdata(defalt)
+       setflag(response.data[0]);
       })
       .catch(function (error) {
         // handle error
@@ -49,33 +48,35 @@ export const Navbar = () => {
 
   return (
     <>
-
-      <div className="navbarsection sticky-top  ">
+    
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 mx-auto">
               <nav className="navbar  navbar-expand-lg ">
                 <div className="container py-1">
-                  <NavLink className="navbar-brand" to="/"><img src={logo} /></NavLink>
+                  <NavLink className="navbar-brand" to="/"><img style={{width:'30px',height:'35x'}} src={logo} /> <span><img style={{width:"214px",height:"35"}} src={logo2}/></span></NavLink>
                   <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                   </button>
                   <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-lg-0 ">
 
-                      <li className="nav-item">
+                      <li className="nav-item ">
                         <NavLink className="nav-link" to="/">About Us</NavLink>
-                      </li>
+                      </li> 
 
-                      <li className="nav-item">
-                        <select onChange={(e) => setstatevalue(e.target.value)} className="form-select   " >
-                          <option selected>New York</option>
+                       <li className="nav-item">
+                       <span>
+                          {flag&&<img src={flag.state_flag_url} /> }  
+                         </span>
+                          <select style={{border:'none'}} onChange={(e) => setFlagState(e.target.value)} className="select" >
+                          {/* <option  className='selected'>New York</option> */}
                           {
                             data.map((val, ind) => {
+
                               return (
 
-                                <option value={val.state}> {val.state} <img src={val.map_image_url
-                                } /></option>
+                                <option value={val.state}  > {val.state} </option>
 
 
                               )
@@ -87,16 +88,16 @@ export const Navbar = () => {
                       </li>
 
 
-                      <li className="nav-item">
-                        <NavLink style={{ color: "#D42443" }} className="nav-link " data-bs-toggle="modal" data-bs-target="#loginmodal" to="/">Login</NavLink>
+                       <li className="nav-item">
+                        <NavLink style={{ color: "#D42443" }} className="nav-link login " data-bs-toggle="modal" data-bs-target="#loginmodal" to="/">Login</NavLink>
                       </li>
 
 
 
 
-                      <li className="nav-item">
-                        <NavLink className="nav-link btn btn-danger" data-bs-toggle="modal" data-bs-target="#signup1" to="/">Sign Up <span><i className='fa fa-arrow-right'></i></span></NavLink>
-                      </li>
+                       <li className="nav-item ">
+                         <NavLink className="nav-link btn btn-danger " data-bs-toggle="modal" data-bs-target="#signup1" to="/">Sign Up <span><i className='fa fa-arrow-right'></i></span></NavLink>
+                      </li> 
 
 
                     </ul>
@@ -107,7 +108,7 @@ export const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+  
 
 
 
@@ -145,7 +146,7 @@ export const Navbar = () => {
 
             </div>
             <div className='bottom mt-2 mb-3'>
-              <p>I don’t have an account: <span> <a href='#'>Click Here</a>  </span> </p>
+              <p>I don’t have an account: <span> <a  data-bs-toggle="modal" data-bs-target="#signup1" href='#'>Click Here</a>  </span> </p>
             </div>
           </div>
         </div>

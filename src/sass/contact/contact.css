@@ -1,45 +1,25 @@
 .contact {
   width: 100%;
   overflow-x: hidden;
+  background-color: white;
 }
-.contact h2 {
+.contact .container .row {
+  margin-bottom: 34px;
+}
+.contact .container .row h2 {
   text-align: center;
-  margin: 10px auto;
-  padding: 5px;
-  color: black;
-  font-family: "poppins";
+  margin-top: 85px;
+  margin-bottom: 15px;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
-  text-transform: capitalize;
-}
-.contact .form-floating label {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
+  line-height: 51px;
+  text-align: center;
+  text-transform: uppercase;
   color: #333333;
 }
-.contact .form-floating label .fw-bold {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  color: #333333;
-}
-.contact .form-floating .fw-bold {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  color: #333333;
-}
-.contact .form-floating textarea {
-  height: 200px;
-}
-.contact p {
+.contact .container .row p {
   color: #333333;
   text-align: center;
   font-family: "Open Sans";
@@ -48,73 +28,112 @@
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
+  margin-bottom: 39px;
 }
-.contact .butt .btn-danger {
+.contact .container .row .form-floating label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.contact .container .row .form-floating label .fw-bold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+.contact .container .row .form-floating .fw-bold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+}
+.contact .container .row .form-floating textarea {
+  height: 200px;
+}
+.contact .container .row .butt .btn-danger {
   background: #D42443;
   border-radius: 10px;
 }
-.contact .butt .btn-danger:hover {
+.contact .container .row .butt .btn-danger:hover {
   background: #e73b5b;
 }
 
-@media screen and (max-width: 480px) {
-  .contact {
+@media screen and (max-width: 500px) {
+  .contact .container {
     width: 100%;
     overflow-x: hidden;
+    margin: 0px auto;
   }
-  .contact h2 {
-    text-align: center;
-    margin: 5px auto;
-    padding: 0px;
-    color: black;
-    font-family: "poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: capitalize;
-  }
-  .contact p {
-    color: #333333;
-    text-align: center;
+  .contact .container .row .para p {
     font-family: "Open Sans";
+    margin-left: 50px;
+    margin-right: 50px;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    margin: 2px 1px;
+    line-height: 160%;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
     text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 25px;
   }
-  .contact .form-floating label {
+  .contact .container .row .image {
+    display: none;
+  }
+  .contact .container .row h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 55px;
+  }
+  .contact .container .row .form-floating {
+    margin-top: 0px;
+  }
+  .contact .container .row .form-floating label {
     font-family: "Open Sans";
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 22px;
     color: #333333;
   }
-  .contact .form-floating label .fw-bold {
+  .contact .container .row .form-floating label .fw-bold {
     font-family: "Open Sans";
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 22px;
     color: #333333;
   }
-  .contact .form-floating .fw-bold {
+  .contact .container .row .form-floating .fw-bold {
     font-family: "Open Sans";
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 16px;
     color: #333333;
   }
-  .contact .form-floating textarea {
+  .contact .container .row .form-floating textarea {
     height: 200px;
   }
-  .contact .butt .btn-danger {
+  .contact .container .row .butt .btn-danger {
     background: #D42443;
     border-radius: 10px;
-    font-size: 14px;
   }
-  .contact .butt .btn-danger:hover {
+  .contact .container .row .butt .btn-danger:hover {
     background: #e73b5b;
   }
 }/*# sourceMappingURL=contact.css.map */

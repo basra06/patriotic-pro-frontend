@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from "react-slick";
 import first from "../assets/images/sliderimages/Mask group (1).png"
 import seacond from "../assets/images/sliderimages/Mask group (2).png"
@@ -13,15 +13,29 @@ export const Industry = () => {
 
 
     function SamplePrevArrow(props) {
+
+
+     const[services,setservices]=useState(["Air Conditioning" ,
+     "Carpentry","Cleaning","Concrete","Drywall","Electrician",
+     "Fencing","Garage Door Installation","Handyman","Heating & Furnace","HVAC Contractors"
+    ,"HVAC Contractors","Landscaping","Painting","Pest Control","Plumbing","Remodeling","Roofing","Tile"])
+     
+     
+     
+     
+
+     
+
         const { className, style, onClick } = props;
+
         return (
-            
-                <button
+
+            <button
                 className={className}
-                style={{ display: "block", color: "white", border: "none",cursor:'pointer', borderRadius: "50%", width: "20px", height: "20px", position: 'absolute', background: "green", top: 60 }}
+                style={{ display: "block", color: "white", border: "none", cursor: 'pointer', borderRadius: "50%", width: "20px", height: "20px", position: 'absolute', background: "#D42443", top: 70, left: 10, zIndex: 700 }}
                 onClick={onClick}
             />
-         
+
 
         );
     }
@@ -32,7 +46,7 @@ export const Industry = () => {
         return (
             <div
                 className={className}
-                style={{ display: "block", color: "white", border: "none", cursor:'pointer', borderRadius: "50%", width: "20px", height: "20px", position: 'absolute', background: "#D42443", top: 60}}
+                style={{ display: "block", color: "white", border: "none", cursor: 'pointer', borderRadius: "50%", width: "20px", height: "20px", position: 'absolute', background: "#D42443", top: 70, right: 10, zIndex: 700 }}
                 onClick={onClick}
             />
         );
@@ -73,8 +87,9 @@ export const Industry = () => {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
                 }
             }
         ]
@@ -87,82 +102,85 @@ export const Industry = () => {
         <>
 
             <div className="industrylist ">
-                <div className="container mt-5 mb-5">
+                <div className="container">
                     <div className="row  ">
-                        <div className="textdata mt-4 mb-4  text-center">
+                        <div className="textdata">
                             <h2>popular industry list</h2>
-                            <p className='mt-3'>You love America, Hire a Pro that does too. Free for Pros, Free for Homeowners.</p>
+                            <p>You love America, Hire a Pro that does too. Free for Pros, Free for Homeowners.</p>
                         </div>
-                        <div>
-                            <Slider {...settings}>
-                                <div className='slider'>
-                                    <div className="card my-auto" >
-                                        <img className='image-fluid' src={first} />
-                                    </div>
-                                    <div className="texthead m-2">
-                                        <p>Air Conditioning</p>
-                                    </div>
+
+                        <Slider {...settings}>
+                            <div className='slider'>
+                                <div className="card " >
+                                    <img className='image-fluid' src={first} />
                                 </div>
-                                <div className='slider'>
-                                    <div className="card " >
-                                        <img className='image-fluid' src={seacond} />
-                                    </div>
-                                    <div className="texthead ">
-                                        <p>Carpentry</p>
-                                    </div>
+                                <div className="texthead ">
+                                    <p>Air Conditioning</p>
                                 </div>
-
-                                <div className='slider'>
-                                    <div className="card " >
-                                        <img className='image-fluid' src={third} />
-                                    </div>
-                                    <div className="texthead ">
-                                        <p>Cleaning</p>
-                                    </div>
+                            </div>
+                            <div className='slider'>
+                                <div className="card " >
+                                    <img className='image-fluid' src={seacond} />
                                 </div>
-
-                                <div className="slider">
-                                    <div className="card " >
-                                        <img className='image-fluid' src={fourth} />
-                                    </div>
-                                    <div className="texthead">
-                                        <p>Concrete</p>
-                                    </div>
+                                <div className="texthead ">
+                                    <p>Carpentry</p>
                                 </div>
+                            </div>
 
-                                <div className='slider'>
-                                    <div className="card " >
-                                        <img className='image-fluid' src={fifth} />
-                                    </div>
-                                    <div className="texthead ">
-                                        <p>Drywall</p>
-                                    </div>
+                            <div className='slider'>
+                                <div className="card " >
+                                    <img className='image-fluid' src={third} />
                                 </div>
-
-
-
-                                <div className='slider'>
-                                    <div className="card " >
-                                        <img className='image-fluid' src={sixth} />
-                                    </div>
-                                    <div className="texthead ">
-                                        <p>Electrician</p>
-                                    </div>
+                                <div className="texthead ">
+                                    <p>Cleaning</p>
                                 </div>
+                            </div>
 
-
-
-                                <div className='slider'>
-                                    <div className="card " >
-                                        <img className='image-fluid' src={seven} />
-                                    </div>
-                                    <div className="texthead ">
-                                        <p>Fencing</p>
-                                    </div>
+                            <div className="slider">
+                                <div className="card " >
+                                    <img className='image-fluid' src={fourth} />
                                 </div>
+                                <div className="texthead">
+                                    <p>Concrete</p>
+                                </div>
+                            </div>
 
-                            </Slider>
-                        </div>
+                            <div className='slider'>
+                                <div className="card " >
+                                    <img className='image-fluid' src={fifth} />
+                                </div>
+                                <div className="texthead ">
+                                    <p>Drywall</p>
+                                </div>
+                            </div>
+
+
+
+                            <div className='slider'>
+                                <div className="card " >
+                                    <img className='image-fluid' src={sixth} />
+                                </div>
+                                <div className="texthead ">
+                                    <p>Electrician</p>
+                                </div>
+                            </div>
+
+
+
+                            <div className='slider'>
+                                <div className="card " >
+                                    <img className='image-fluid' src={seven} />
+                                </div>
+                                <div className="texthead ">
+                                    <p>Fencing</p>
+                                </div>
+                            </div>
+
+                        </Slider>
+                        {/* </div> */}
+
+
+
 
                     </div>
                 </div>
