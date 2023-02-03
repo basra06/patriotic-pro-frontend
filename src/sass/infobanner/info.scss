@@ -8,62 +8,130 @@
 
     
 
-    .container {
-        width: 100%;
+   
+        .container {
+            width: 100%;
 
-        .tex {
-            margin: 40px 10px;
-            text-align: center;
-           
+            .row{
 
-            h1 {
-                color:white;
-                font-family: 'Poppins';
-                text-align: center;
-                text-transform: uppercase;
-                font-style: normal;
-                font-size: 42px;
-                font-weight: 700;
-            }
+                    // padding: 40px auto;
 
-            p {
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 18px;
-                color: white;
-            }
-            .but{
-                 text-align: center;
-                 margin: 20px auto;
-                 padding: 5px;
-                 font-size: 18px;
-                 font-family: 'Open Sans';
-                 button{
-                    width: 200px;
-                    color: white;
-                    font-weight: bold;
-                    background: #D42443;
-                    &:hover{
-                        background: #e73b5b;
+                .tex {
+               
+                  margin-top: 172px;
+                  margin-bottom: 40px;
+    
+                    h1 {
+                        color:white;
+                        font-family: 'Poppins';
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-style: normal;
+                        font-size: 42px;
+                        font-weight: 700;
                     }
-                 }
-            }
-            
-
-
-        }
-
+        
+                    p {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: white;
+                        margin-top: 5px;
+                    }
+                    .but{
+                         text-align: center;
+                        //  margin: 20px auto;
+                         margin-top: 40px ;
+                         margin-bottom: 154px;
+                         padding: 5px;
+                         font-size: 18px;
+                         font-family: 'Open Sans';
+                         button{
+                            width: 140px;
+                            height: 42px;
+                            color: white;
+                            font-weight: bold;
+                            background: #D42443;
+                            &:hover{
+                                background: #e73b5b;
+                            }
+                         }
+                    }
+                    
+        
+        
+                }
         
 
-
-    }
+            }
+    
+          
+            
+    
+    
+        }
+    
 
 }
 
 
 
-@media screen and (max-width: 480px) {
+// @media screen and (max-width: 480px) {
+
+//     .infobanner {
+//         width: 100%;
+//         margin: 0px;
+//         padding: 0px;
+//         overflow-x: hidden;
+//         background-image: url("../../assets/images/infobanner/Group\ 133.png");
+    
+        
+    
+//         .container {
+//             width: 100%;
+    
+//             .tex {
+//                 margin: 10px auto;
+//                 .but{
+//                      text-align: center;
+//                      margin: 0px auto;
+//                     //  padding: 3px;
+//                      font-size: 16px;
+//                      font-family: 'Open Sans';
+//                      button{
+//                         width: 95px;
+//                         height: 38px;
+//                         color: white;
+//                         font-weight: bold;
+//                         font-size: 14px;
+//                         font-family: 'Open Sans';
+//                         background: #D42443;
+//                         &:hover{
+//                             background: #e73b5b;
+//                         }
+//                      }
+//                 }
+                
+    
+    
+//             }
+    
+            
+    
+    
+//         }
+    
+//     }
+    
+
+
+// }
+
+
+
+@media screen and (max-width: 500px) {
+
 
     .infobanner {
         width: 100%;
@@ -77,53 +145,59 @@
         .container {
             width: 100%;
     
-            .tex {
-                margin: 10px auto;
-                text-align: center;
-               
-    
-                h1 {
-                    color:white;
-                    font-family: 'Poppins';
-                    text-align: center;
-                    text-transform: uppercase;
-                    font-style: normal;
-                    font-size: 18px;
-                    font-weight: 700;
-                }
-    
-                p {
-                    font-family: 'Open Sans';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 14px;
-                    color: white;
-                    margin: 10px auto;
-                }
-                .but{
-                     text-align: center;
-                     margin: 0px auto;
-                    //  padding: 3px;
-                     font-size: 16px;
-                     font-family: 'Open Sans';
-                     button{
-                        width: 95px;
-                        height: 38px;
-                        color: white;
-                        font-weight: bold;
-                        font-size: 14px;
+            .row{
+
+
+                .tex {   
+                    margin-top: 61px;
+                   h1 {
+                       font-family: 'Poppins';
+                       font-style: normal;
+                       font-weight: 700;
+                       font-size: 18px;
+                       line-height: 27px;    
+                       text-align: center;
+                       text-transform: uppercase;
+                       margin-left: auto;
+                       margin-right: auto;
+                       
+                       color: #FFFFFF;
+                   }
+       
+                   p {
+                       font-family: 'Open Sans';
+                       font-style: normal;
+                       font-weight: 600;
+                       font-size: 14px;
+                       color: white;
+                       margin-top: 10px;
+                       margin-left: 24px;
+                       margin-right: 24px;
+                   }
+                   .but{
+                        text-align: center;
+                        margin-top: 25px;
+                        margin-bottom: 48px;
                         font-family: 'Open Sans';
-                        background: #D42443;
-                        &:hover{
-                            background: #e73b5b;
+                        button{
+                            width: 95px;
+                            height: 38px;
+                           color: white;
+                           font-weight: bold;
+                           background: #D42443;
+                           &:hover{
+                               background: #e73b5b;
+                           }
                         }
-                     }
-                }
+                   }
+                   
+       
+       
+               }
+
                 
-    
-    
+       
             }
-    
             
     
     
@@ -131,6 +205,62 @@
     
     }
     
+    
+    
+    @media screen and (max-width: 500px) {
+    
+        .infobanner {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            background-image: url("../../assets/images/infobanner/Group\ 133.png");
+        
+            
+        
+            .container {
+                width: 100%;
+        
+              .row{
+                
+                  .tex {
+                    margin-top: 61px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .but{
+                         text-align: center;
+                         font-size: 16px;
+                         font-family: 'Open Sans';
+                         button{
+                            width: 95px;
+                            height: 38px;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 14px;
+                            font-family: 'Open Sans';
+                            background: #D42443;
+                            border-radius: 10px;
+                            &:hover{
+                                background: #e73b5b;
+                            }
+                         }
+                    }
+                    
+        
+        
+                }
+        
+              }
+                
+        
+        
+            }
+        
+        }
+        
+    
+    
+    }
 
 
 }

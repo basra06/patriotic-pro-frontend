@@ -6,7 +6,9 @@ import { Search } from '../componants/Search'
 export const Searchpage = () => {
   return (
     <>
-    <Navbar/>
+    <div className="navbarsection sticky-top ">
+        <Navbar/> 
+        </div>    
     <Search/>
 
     <Footer/>

@@ -36,7 +36,7 @@ export const State = () => {
   return (
     <>
     <div className="states">
-        <div className="container mt-5 mb-5">
+        <div className="container ">
             <div className="row  ">
 
                <div className="text">
@@ -49,9 +49,9 @@ export const State = () => {
                       
                         return(
                            
-                              <div className="col-lg-2 col-md-4 col-6  mt-1 mb-1 p-2 ">
-                             <span className='p-1 '>
-                        <img style={{width:'24px'}} className='image-fluid'  src={val.state_flag_url} />
+                              <div className="col-lg-2 col-md-4 col-4 mt-1 mb-1 p-1 credits">
+                             <span className='flagdata '>
+                        <img  className='image-fluid'  src={val.state_flag_url} />
                          <a href="#">  {val.state}</a> 
                     </span>
                     </div>
@@ -64,7 +64,7 @@ export const State = () => {
                 }
 
 
- <h6 className='text-center mt-4 mb-2 '>View All States</h6> 
+ <h6 className='text-center  '>View All States</h6> 
 
                    
 

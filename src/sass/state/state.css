@@ -4,11 +4,17 @@
   overflow-x: hidden;
   background: #F4F4F4;
 }
+.states .row {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 .states .row h6 {
   text-align: center;
   color: #D42443;
   text-transform: capitalize;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
   display: none;
 }
 .states .row h6:hover {
@@ -16,7 +22,8 @@
 }
 .states .row .text {
   text-align: center;
-  margin: 35px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .states .row .text h2 {
   text-align: center;
@@ -37,30 +44,48 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
+  margin-bottom: 45px;
 }
-.states .row span .image-fluid {
-  width: "24px";
-  height: "16px";
+.states .row .flagdata .image-fluid {
+  width: 24px;
+  height: 16px;
 }
-.states .row span a {
-  color: "#163791";
-  font-size: 16px;
-  font-family: sans-serif;
+.states .row .flagdata a {
+  font-family: "Open Sans";
+  font-style: normal;
   font-weight: 400;
-  margin: 1px 1px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #163791;
   text-decoration: none;
-  text-transform: capitalize;
+  /* identical to box height */
+  color: #163791;
 }
-.states .row span a:hover {
+.states .row .flagdata a:hover {
   color: #D42443;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .states {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
     background: #F4F4F4;
+  }
+  .states .row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .states .row h6 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .states .row h6 {
     text-align: center;
@@ -89,30 +114,39 @@
     font-weight: 700;
   }
   .states .row .text p {
-    text-align: center;
-    margin: 10px auto;
-    color: #333;
-    font-weight: 600;
-    font-size: 14px;
-    font-size: 16px;
     font-family: "Open Sans";
     font-style: normal;
-    padding: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
-  .states .row span .image-fluid {
-    width: "24px";
-    height: "16px";
+  .states .row .credits {
+    text-align: justify;
+    margin-top: 28px;
   }
-  .states .row span a {
+  .states .row .credits .flagdata {
+    margin-left: 20px;
+  }
+  .states .row .credits .flagdata .image-fluid {
+    width: 18px;
+    height: 14px;
+  }
+  .states .row .credits .flagdata a {
     color: "#163791";
-    font-size: 16px;
+    font-size: 10px;
     font-family: sans-serif;
     font-weight: 400;
     margin: 1px 1px;
     text-decoration: none;
     text-transform: capitalize;
   }
-  .states .row span a:hover {
+  .states .row .credits .flagdata a:hover {
     color: #D42443;
   }
 }/*# sourceMappingURL=state.css.map */
