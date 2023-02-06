@@ -1,318 +1,718 @@
-.enquiry{
+.enquiry {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    width: 100%;
 
-    .container{
-        margin-top: 115px;
-         
-        .card-body {
-            margin: 0px;
-            padding: 0px;
+    .container {
+        margin-top: 50px;
+        margin-bottom: 60px;
 
-            .first {
-                display: flex;
-                justify-content: flex-start;
+        .cardsinfo {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+            width: 100%;
 
-                h3 {
+            .image {
+                img {
+                    width: 100%;
+                    height: cover;
+                    border-radius: 10px;
+                    height: 100%;
+                    padding: 10px;
+
+
+                }
+            }
+
+            .card-body {
+                margin: 0px;
+                padding: 0px;
+
+                .firstsection {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    h3 {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 33px;
+                        color: #163791;
+                        margin-top: 14px;
+                        margin-left: 4px;
+                        margin-left: 10px;
+                        cursor: pointer;
+
+
+                        &:hover {
+                            color: #D42443;
+                        }
+                    }
+
+
+
+                }
+
+
+
+                .secondsection {
+                    display: flex;
+                    justify-content: start;
+
+                    .icon {
+
+
+
+                        i {
+                            margin: 4px 10px;
+                            font-size: 20px;
+                            color: #D42443;
+                        }
+
+                    }
+
+                    .detail {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 160%;
+                        color: #B1B1B1;
+
+                    }
+
+                }
+
+                .thirsection {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    .question {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 160%;
+                        color: #163791;
+                        margin-left: 10px;
+
+
+                    }
+
+
+                    .answer {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 160%;
+                        color: #333333;
+                        margin-left: 30px;
+                    }
+
+                }
+
+
+                .fourection {
+                    display: flex;
+                    justify-content: flex-start;
+
+
+                    .question {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 160%;
+                        margin-left: 10px;
+                        color: #163791;
+
+
+                    }
+
+
+                    .answer {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 160%;
+                        color: #333333;
+                        margin-left: 30px;
+                    }
+
+                }
+
+
+                .fifthsection {
+                    display: flex;
+                    justify-content: flex-start;
+
+
+                    .question {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 160%;
+                        margin-left: 10px;
+                        color: #163791;
+                    }
+
+
+                    .answer {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 160%;
+                        color: #333333;
+                        margin-left: 30px;
+                    }
+                }
+
+
+            }
+        }
+
+
+
+
+        .cardsecondsection {
+            .card-body {
+                h5 {
                     font-family: 'Poppins';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 22px;
                     line-height: 33px;
-                    color: #163791;
-                    margin-top: 14px;
-                    margin-left: 4px;
-                    margin-left: 10px;
-                    cursor: pointer;
-                    
-
-                    &:hover {
-                        color: #D42443;
-                    }
+                    color: #333333;
+                    margin-left: 30px;
+                    margin-top: 25px;
                 }
 
-
-
-            }
-
-
-
-            .second {
-                display: flex;
-                justify-content: start;
-
-                .icon {
-
-
-
-                    i {
-                        margin: 4px 10px;
-                        font-size: 20px;
-                        color: #D42443;
-                    }
-
-                }
-
-                .detail {
-                    font-family: 'Open Sans';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 160%;
-                    color: #B1B1B1;
-
-                }
-
-
-
-
-
-
-            }
-
-            .thir{
-                display: flex;
-                justify-content: flex-start;
-
-
-                .question{
-                 font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 160%;
-color: #163791;
-margin-left: 10px;
-
-
-                }
-
-
-                .answer{
-                    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 160%;
-/* identical to box height, or 26px */
-
-
-color: #333333;
-margin-left: 30px;
-                }
-                // p {
-                //     margin-top: 9px;
-                //     font-family: 'Open Sans';
-                //     font-style: normal;
-                //     font-weight: 600;
-                //     font-size: 16px;
-                //     line-height: 160%;
-                //     /* identical to box height, or 26px */
-
-
-                //     color: #163791;
-
-                // }
-            }
-
-
-            .four{
-                display: flex;
-                justify-content: flex-start;
-
-
-                .question{
-                 font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 160%;
-margin-left: 10px;
-color: #163791;
-
-
-                }
-
-
-                .answer{
-                    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 160%;
-/* identical to box height, or 26px */
-
-
-color: #333333;
-margin-left: 30px;
-                }
-                // p {
-                //     margin-top: 9px;
-                //     font-family: 'Open Sans';
-                //     font-style: normal;
-                //     font-weight: 600;
-                //     font-size: 16px;
-                //     line-height: 160%;
-                //     /* identical to box height, or 26px */
-
-
-                //     color: #163791;
-
-                // }
-            }
-
-           
-            .fif{
-                display: flex;
-                justify-content: flex-start;
-
-
-                .question{
-                 font-family: 'Open Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 160%;
-margin-left: 10px;
-color: #163791;
-
-
-                }
-
-
-                .answer{
-                    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 160%;
-
-/* identical to box height, or 26px */
-
-
-color: #333333;
-margin-left: 30px;
-                }
-                // p {
-                //     margin-top: 9px;
-                //     font-family: 'Open Sans';
-                //     font-style: normal;
-                //     font-weight: 600;
-                //     font-size: 16px;
-                //     line-height: 160%;
-                //     /* identical to box height, or 26px */
-
-
-                //     color: #163791;
-
-                // }
-            }
-
-
-        }
-
-
-        .secondsection{
-
-            .card{
-               
-            }
-            .card-body{
-                h5{
-                    font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 33px;
-/* identical to box height */
-
-
-color: #333333;
-margin-left: 30px;
-margin-top: 25px;
-                }
-
-                // p{
-                //    .f{
-                //     font-family: 'Open Sans';
-                //     font-style: normal;
-                //     font-weight: 400;
-                //     font-size: 16px;
-                //     line-height: 180%;
-                //     /* or 29px */
-                    
-                    
-                //     color: #333333;
-                //     margin-left: 30px;
-                //     margin-right: 21px;
-                //     margin-top: 13px;
-                //    }
-
-                
-                // }
-                .f{
+                .f {
                     margin-left: 30px;
                     margin-right: 21px;
-                    margin-top: 13px; 
-                    }
-                    p{
-                        font-family: 'Open Sans';
+                    margin-top: 13px;
+                }
+
+                p {
+                    font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 180%;
-                    /* or 29px */
-                    
-                    
                     color: #333333;
-                  
+
                 }
 
-                .s{
+                .s {
                     margin-left: 30px;
                     margin-right: 21px;
                     margin-top: 15px;
                     margin-bottom: 33px;
-                    p{
+
+                    p {
                         font-family: 'Open Sans';
-                     font-style: normal;
-                     font-weight: 400;
-                     font-size: 16px;
-                     line-height: 180%;
-                     /* or 29px */
-                     
-                     
-                     color: #333333;
-                    
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 180%;
+                        color: #333333;
 
                     }
                 }
-
-
-                // p{
-                  
- 
-                //     .s{
-                //      font-family: 'Open Sans';
-                //      font-style: normal;
-                //      font-weight: 400;
-                //      font-size: 16px;
-                //      line-height: 180%;
-                //      /* or 29px */
-                     
-                     
-                //      color: #333333;
-                //      margin-left: 30px;
-                //      margin-right: 21px;
-                //      margin-top: 15px;
-                //      margin-bottom: 33px;
-                //     }
-                //  }
             }
         }
 
 
 
     }
+}
+
+
+
+
+
+
+@media screen and (min-width: 500px) and(max-width:778px) {
+    .enquiry {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+
+        .container {
+            margin-top: 65px;
+            margin-bottom: 35px;
+
+            .cardsinfo {
+                background: #FFFFFF;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                width: 100%;
+
+                .image {
+                    background-color: white;
+                    text-align: center;
+                    margin: 10px auto;
+
+                    img {
+                        width: 200px;
+                        height: 150px;
+                        border-radius: 50% 50%;
+                        margin-top: 10px;
+                    }
+                }
+
+                .card-body {
+                    margin: 0px;
+                    padding: 0px;
+
+                    .firstsection {
+                        display: flex;
+                        justify-content: center;
+
+
+                        h3 {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 22px;
+                            line-height: 33px;
+                            color: #163791;
+                            margin-top: 14px;
+                            margin-left: 4px;
+                            margin-left: 10px;
+                            cursor: pointer;
+                            text-align: center;
+
+                            &:hover {
+                                color: #D42443;
+                            }
+                        }
+                    }
+
+
+
+                    .secondsection {
+                        display: flex;
+                        justify-content: start;
+                        margin: 10px 20px;
+
+                        .icon {
+                            i {
+                                margin: 4px 10px;
+                                font-size: 20px;
+                                color: #D42443;
+                            }
+
+                        }
+
+                        .detail {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 160%;
+                            color: #B1B1B1;
+
+                        }
+
+                    }
+
+                    .thirsection {
+                        display: flex;
+                        justify-content: flex-start;
+                        margin: 0px 20px;
+
+                        .question {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 160%;
+                            color: #163791;
+                            margin-left: 10px;
+
+                        }
+
+                        .answer {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 160%;
+                            color: #333333;
+                            margin-left: 10px;
+                        }
+
+                    }
+
+
+                    .fourection {
+                        display: flex;
+                        justify-content: flex-start;
+                        margin: 0px 20px;
+
+                        .question {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 160%;
+                            margin-left: 10px;
+                            color: #163791;
+                        }
+
+
+                        .answer {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 160%;
+                            color: #333333;
+                            margin-left: 10px;
+                        }
+
+                    }
+
+
+                    .fifthsection {
+                        display: flex;
+                        justify-content: flex-start;
+                        margin: 0px 20px;
+
+                        .question {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 160%;
+                            margin-left: 10px;
+                            color: #163791;
+                        }
+
+
+                        .answer {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 160%;
+                            color: #333333;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
+
+
+
+            .secondsection {
+                .card-body {
+                    h5 {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 33px;
+                        color: #333333;
+                        margin-left: 30px;
+                        margin-top: 25px;
+                    }
+
+                    .f {
+                        margin-left: 30px;
+                        margin-right: 21px;
+                        margin-top: 13px;
+                    }
+
+                    p {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 180%;
+                        color: #333333;
+
+                    }
+
+                    .s {
+                        margin-left: 30px;
+                        margin-right: 21px;
+                        margin-top: 15px;
+                        margin-bottom: 33px;
+
+                        p {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 180%;
+                            color: #333333;
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .enquiry {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+
+        .container {
+            margin-top: 35px;
+            margin-bottom: 60px;
+
+            .cardsinfo {
+                background: #FFFFFF;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                width: 100%;
+
+                .image {
+                    background-color: white;
+                    text-align: center;
+                    margin: 10px auto;
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50% 50%;
+                        margin-top: 10px;
+                    }
+                }
+
+                .card-body {
+                    margin: 0px;
+                    padding: 0px;
+
+                    .firstsection {
+                        display: flex;
+                        justify-content: center;
+
+
+                        h3 {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 22px;
+                            line-height: 33px;
+                            color: #163791;
+                            margin-top: 14px;
+                            margin-left: 4px;
+                            margin-left: 10px;
+                            cursor: pointer;
+                            text-align: center;
+
+
+
+                            &:hover {
+                                color: #D42443;
+                            }
+                        }
+
+
+
+                    }
+
+
+
+                    .secondsection {
+                        display: flex;
+                        justify-content: start;
+                        margin: 10px 20px;
+
+                        .icon {
+
+
+
+                            i {
+                                margin: 4px 10px;
+                                font-size: 20px;
+                                color: #D42443;
+                            }
+
+                        }
+
+                        .detail {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 160%;
+                            color: #B1B1B1;
+
+                        }
+
+                    }
+
+                    .thirsection {
+                        display: flex;
+                        justify-content: flex-start;
+                        margin: 0px 20px;
+
+                        .question {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 160%;
+                            color: #163791;
+                            margin-left: 10px;
+
+
+                        }
+
+
+                        .answer {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 160%;
+                            color: #333333;
+                            margin-left: 10px;
+                        }
+
+                    }
+
+
+                    .fourection {
+                        display: flex;
+                        justify-content: flex-start;
+                        margin: 0px 20px;
+
+
+                        .question {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 160%;
+                            margin-left: 10px;
+                            color: #163791;
+
+
+                        }
+
+
+                        .answer {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 160%;
+                            color: #333333;
+                            margin-left: 10px;
+                        }
+
+                    }
+
+
+                    .fifthsection {
+                        display: flex;
+                        justify-content: flex-start;
+                        margin: 0px 20px;
+
+
+                        .question {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 160%;
+                            margin-left: 10px;
+                            color: #163791;
+                        }
+
+
+                        .answer {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 160%;
+                            color: #333333;
+                            margin-left: 10px;
+                        }
+                    }
+
+
+                }
+            }
+
+
+
+
+            .secondsection {
+                .card-body {
+                    h5 {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 33px;
+                        color: #333333;
+                        margin-left: 30px;
+                        margin-top: 25px;
+                    }
+
+                    .f {
+                        margin-left: 30px;
+                        margin-right: 21px;
+                        margin-top: 13px;
+                    }
+
+                    p {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 180%;
+                        color: #333333;
+
+                    }
+
+                    .s {
+                        margin-left: 30px;
+                        margin-right: 21px;
+                        margin-top: 15px;
+                        margin-bottom: 33px;
+
+                        p {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 180%;
+                            color: #333333;
+
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
 }

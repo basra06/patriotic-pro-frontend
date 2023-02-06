@@ -11,7 +11,7 @@ export const Contact = () => {
 
           <div className="row ">
             <h2>Get in touch</h2>
-          <div className="para">
+          <div className="contacttext">
           <p >You love America, Hire a Pro that does too. Free for Pros, Free for Homeowners.</p>
           </div>
 
@@ -19,7 +19,7 @@ export const Contact = () => {
 
             <div className="col-lg-5 col-md-6 col-sm-12  ">
               <div className="image ">
-                <img style={{ width: '100%' }} src={contact} />
+                <img className='image-fluid' src={contact} />
               </div>
             </div>
 

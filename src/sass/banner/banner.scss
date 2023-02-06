@@ -11,19 +11,16 @@ $hover: #e73b5b;
     background-position: center;
 
     .bannersection {
-        margin-top: 250px;
-
+      
         .row {
-            .tex {
-                // margin: 40px 0px;
-
-                .logoimage {
+            .bannerheading {
+              
+              .logoimage {
                     display: none;
                 }
 
                 h1 {
-
-                    // padding: 20px auto;
+                    margin-top: 245px;
                     font-family: 'Poppins';
                     font-weight: 700;
                     font-size: 42px;
@@ -31,6 +28,7 @@ $hover: #e73b5b;
                     text-align: center;
                     text-transform: uppercase;
                     color: #FFFFFF;
+                 
                 }
 
                 p {
@@ -47,26 +45,22 @@ $hover: #e73b5b;
 
 
             }
-
-
-
-            .conatiner {
+         .conatiner {
                 margin-bottom: 157px;
                 margin-top: 40px;
 
                 .options {
                     display: flex;
-                    // height: 65px;
                     justify-content: space-between;
                     align-items: center;
                     background-color: #FFFFFF;
                     align-items: center;
-                    // margin: 0px 0px;
+                     margin: 0px 70px;
                     box-sizing: border-box;
-                    border-radius: 100px;
+                    border-radius: 10px;
                     flex-wrap: wrap;
 
-                    .first {
+                    .firstsection {
                         border-right: 1px solid #e3e3e3;
                         flex-grow: 4;
                         flex-basis: 35%;
@@ -74,7 +68,6 @@ $hover: #e73b5b;
                         padding: 0px 5px;
 
                         .form-select {
-
                             font-family: 'Open Sans';
                             font-style: normal;
                             font-weight: 400;
@@ -84,7 +77,6 @@ $hover: #e73b5b;
                             flex-basis: 30%;
                             border-radius: 0px solid white;
                             font-size: 1rem;
-                            font-weight: 400;
                             background-color: white;
                             background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e");
                             background-repeat: no-repeat;
@@ -92,15 +84,13 @@ $hover: #e73b5b;
                             background-size: 10px 12px;
                             border: none;
                             appearance: none;
-                            font-family: "Open Sans";
 
 
                         }
 
                     }
 
-
-                    .seacond {
+                    .seacondsection {
                         flex-grow: 4;
                         flex-basis: 35%;
                         margin: 0px 10px;
@@ -123,7 +113,6 @@ $hover: #e73b5b;
                             background-size: 10px 12px;
                             border: none;
                             appearance: none;
-                            //  padding: 0px 30px;
                             font-family: "Open Sans";
 
 
@@ -131,9 +120,7 @@ $hover: #e73b5b;
 
                     }
 
-
-
-                    .but {
+                    .searchbutton{
                         flex-grow: 3;
                         flex-basis: 15%;
                         height: 65px;
@@ -145,14 +132,19 @@ $hover: #e73b5b;
                         text-align: center;
                         justify-content: center;
                         background-color: $btn-danger;
-                        border-radius: 0px 100px 100px 0px;
+                        border-radius: 0px 10px 10px 0px;
 
                         .btn-danger {
 
                             border: none;
                             width: auto;
                             height: 100%;
-                            border-radius: 15px 100px 100px 15px;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-family: 'Open Sans';
+                            line-height: 25px;
+
+                            border-radius:0px 10px 10px 0px;
                             background-color: $btn-danger;
 
 
@@ -172,25 +164,19 @@ $hover: #e73b5b;
                                     font-weight: 700;
                                     text-align: center;
                                     font-family: 'Open Sans';
-                                    font-size: 18px;
+                                    font-size: 20px;
 
                                 }
                             }
+                           
 
                         }
 
                     }
-
                 }
-
-
             }
-
         }
-
     }
-
-
 }
 
 
@@ -201,7 +187,177 @@ $hover: #e73b5b;
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 500px) and (max-width: 840px) {
+    .banner {
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        max-width: 100%;
+        background-image: url("../../assets/images/bannerimages/Group\ 134.png");
+        background-position: center;
+        .bannersection {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            .row {
+                .bannerheading {
+                    .logoimage {
+                        display: none;
+                        text-align: center;
+                    }
+
+                    h1 {
+                        font-family: 'Poppins';
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 43px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        margin-left: 30px;
+                        margin-right: 30px;
+                        margin-top: 80px;
+                    }
+    
+                    p {
+                        text-align: center;
+                        color: white;
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        margin-left: 40px;
+                        margin-right: 40px;
+                       
+                    }
+                }
+
+
+
+                .conatiner {
+                    margin-top: 19px;
+                    margin-bottom: 130px;
+                   .options {
+                        display: flex;
+                        height: 42px;
+                        justify-content: center;
+                        align-items: center;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        margin-left: 60px;
+                        margin-right: 60px;
+                        .firstsection {
+
+                            flex-basis: 100%;
+                            margin: 5px auto;
+                            border: none;
+
+
+                            .form-select {
+                                border-radius: 0px;
+                                border: none;
+                                padding: 5px 20px;
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: black;
+                                width: 100%;
+                                flex-basis: 30%;
+                                border-radius: 100px white;
+                                font-size: 1rem;
+                                font-weight: 400;
+                                background-color: white;
+                                background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e");
+                                background-repeat: no-repeat;
+                                background-position: right 0.75rem center;
+                                background-size: 10px 12px;
+                                border: none;
+                                appearance: none;
+
+                            }
+
+                        }
+
+                        .seacondsection {
+                            flex-basis: 100%;
+                            margin: 0px 3px;
+                            display: none;
+
+                            .form-select {
+                                font-family: 'Open Sans';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: black;
+                                width: 100%;
+                                border-radius: 0px solid white;
+                                font-size: 1rem;
+                                font-weight: 400;
+                                background-color: white;
+                                background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e");
+                                background-repeat: no-repeat;
+                                background-position: right 0.75rem center;
+                                background-size: 10px 12px;
+                                border: none;
+                                appearance: none;
+                                font-family: "Open Sans";
+                            }
+                        }
+
+                        .searchbutton {
+
+                            margin-top: 24px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            flex-grow: 0;
+                            border-radius: 10px;
+                            width: 95px;
+                            height: 38px;
+
+
+                            .btn-danger {
+
+                                background-color: $btn-danger;
+                                border-radius: 10px;
+                                width: 95px;
+                                height: 38px;
+
+
+                                a {
+                                    text-decoration: none;
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    // line-height: 19px;
+                                    // margin: 23px 10px;
+                                    font-family: 'Open Sans';
+
+
+                                    &:hover {
+                                        transition: 0.2s;
+                                        color: white;
+                                        font-style: 14px;
+                                    }
+                                }
+
+
+
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and  (max-width: 500px) {
 
     .banner {
         margin: 0px;
@@ -216,7 +372,7 @@ $hover: #e73b5b;
             margin-bottom: 0px;
 
             .row {
-                .tex {
+                .bannerheading {
                     .logoimage {
                         display: none;
                         text-align: center;
@@ -267,7 +423,7 @@ $hover: #e73b5b;
                         margin-right: 45px;
 
 
-                        .first {
+                        .firstsection {
 
                             flex-basis: 100%;
                             margin: 5px auto;
@@ -299,7 +455,7 @@ $hover: #e73b5b;
                         }
 
 
-                        .seacond {
+                        .seacondsection {
 
                             flex-basis: 100%;
                             margin: 0px 3px;
@@ -332,7 +488,7 @@ $hover: #e73b5b;
 
 
 
-                        .but {
+                        .searchbutton {
 
                             margin-top: 24px;
                             margin-left: auto;

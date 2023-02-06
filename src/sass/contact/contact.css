@@ -30,6 +30,9 @@
   text-transform: uppercase;
   margin-bottom: 39px;
 }
+.contact .container .row .image img {
+  width: 100%;
+}
 .contact .container .row .form-floating label {
   font-family: "Open Sans";
   font-style: normal;
@@ -94,7 +97,6 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
-    /* identical to box height */
     text-align: center;
     text-transform: uppercase;
     color: #333333;
@@ -107,7 +109,7 @@
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     color: #333333;
   }
@@ -115,7 +117,7 @@
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     color: #333333;
   }

@@ -4,28 +4,11 @@
     padding: 0px;
     overflow-x: hidden;
     background: #F4F4F4;
-
-
+    width: 100%;
     .row {
-
         margin-top: 60px;
         margin-bottom: 60px;
-
-        h6 {
-            text-align: center;
-            color: #D42443;
-            text-transform: capitalize;
-            cursor: pointer;
-            margin-left: auto;
-            margin-right: auto;
-            display: none;
-
-            &:hover {
-                color: #e44a66;
-            }
-        }
-
-        .text {
+        .Stateheading {
             text-align: center;
             margin-left: auto;
             margin-right: auto;
@@ -42,60 +25,56 @@
             }
 
             p {
-                font-size: 18px;
-                text-align: center;
-                margin: 10px auto;
-                color: #333;
-                font-size: 16px;
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 600;
-                margin-bottom: 45px;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: #333333;
+                margin-bottom: 30px;
+                margin-top: 15px;
 
             }
         }
 
-        .flagdata {
-           
-
-            .image-fluid {
-
-                width: 24px;
-                height: 16px;
-            }
-
-            a {
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 22px;
-                color: #163791;
-                text-decoration: none;
-                /* identical to box height */
-                color: #163791;
-
-                &:hover {
-                    color: #D42443;
-                    ;
+        .credits {
+            .flagdata {
+                .image-fluid {
+                    width: 24px;
+                    height: 16px;
                 }
 
+                a {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #163791;
+                    text-decoration: none;
+                    color: #163791;
+
+                    &:hover {
+                        color: #D42443;
+                        ;
+                    }
+
+                }
             }
         }
-
-
-
-
+        h6{
+            color:#D42443;
+            margin-top:10px ;
+            text-transform: capitalize;
+            font-size: 14px;
+        }
     }
-
-
-
 }
 
 
 
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
     .states {
 
@@ -108,34 +87,7 @@
         .row {
             margin-top: 50px;
             margin-bottom: 50px;
-           
-
-            h6 {
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 21px;
-                margin-bottom: 20px;
-                margin-top: 20px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            h6 {
-                text-align: center;
-                color: #D42443;
-                text-transform: capitalize;
-                cursor: pointer;
-                display: block;
-
-                &:hover {
-                    color: #e44a66;
-                    text-decoration: underline;
-                }
-            }
-
-            .text {
+            .Stateheading {
                 text-align: center;
                 margin: 10px auto;
 
@@ -154,56 +106,150 @@
 
                 p {
                     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 160%;
-text-align: center;
-text-transform: uppercase;
-color: #333333;
-margin-left: 20px;
-margin-right: 20px;
-margin-bottom: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 160%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #333333;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
                 }
             }
 
 
-              .credits{
-                 text-align: justify;
-                 margin-top: 28px;
-               
+            .credits {
+                text-align: justify;
+                margin-top: 20px;
 
-                
-            .flagdata {
-                  margin-left: 20px;
-                //   margin-right: 10px;
-                .image-fluid {
-                    width: 18px;
-                    height: 14px;
-                }
-
-                a {
-                    color: '#163791';
-                    font-size: 10px;
-                    font-family: sans-serif;
-                    font-weight: 400;
-                    margin: 1px 1px;
-                    text-decoration: none;
-                    text-transform: capitalize;
-
-                    &:hover {
-                        color: #D42443;
-                        
+                .flagdata {
+                    margin-left: 40px;
+                    
+                    .image-fluid {
+                        width: 20px;
+                        height: 16px;
                     }
 
-                }
-            }
+                    a {
+                        color: '#163791';
+                        font-size: 12px;
+                        font-family: sans-serif;
+                        font-weight: 400;
+                        margin: 1px 1px;
+                        text-decoration: none;
+                        text-transform: capitalize;
 
-              }
+                        &:hover {
+                            color: #D42443;
+
+                        }
+
+                    }
+                }
+
+            }
+            h6{
+                color:#D42443;
+                margin-top:10px ;
+                text-transform: capitalize
+            }
 
         }
 
+    }
 
+}
+
+
+
+
+
+@media screen and (max-width: 500px){
+
+    .states {
+
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        background: #F4F4F4;
+
+
+        .row {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .Stateheading {
+                text-align: center;
+                margin: 10px auto;
+
+                h2 {
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    margin: 13px auto;
+                    text-transform: capitalize;
+                    color: black;
+                    font-weight: 700;
+
+                }
+
+                p {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 160%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #333333;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            .credits {
+                text-align: justify;
+                margin-top: 20px;
+
+                .flagdata {
+                    margin-left: 50px;
+                    
+                    .image-fluid {
+                        width: 20px;
+                        height: 16px;
+                    }
+
+                    a {
+                        color: '#163791';
+                        font-size: 12px;
+                        font-family: sans-serif;
+                        font-weight: 400;
+                        margin: 1px 1px;
+                        text-decoration: none;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            color: #D42443;
+
+                        }
+
+                    }
+                }
+
+            }
+
+            h6{
+                color:#D42443;
+                margin-top:10px ;
+                text-transform: capitalize
+            }
+
+        }
 
     }
 

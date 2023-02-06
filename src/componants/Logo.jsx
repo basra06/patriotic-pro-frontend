@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/images/logo/Transparent-white 1 (1).png"
+import logo from "../assets/images/logo/Transparent-white 1 (2).png"
 import "../sass/logo/logo.css"
 
 export const Logo = () => {

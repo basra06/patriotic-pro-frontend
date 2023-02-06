@@ -1,0 +1,97 @@
+.update {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+
+
+    .container {
+        .row {
+            margin: 50px 0px;
+
+            .image {
+                background-color: white;
+                text-align: center;
+                justify-content: center;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+
+                }
+            }
+
+            .updatetext {
+                h6 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 33px;
+                    /* identical to box height */
+
+                    text-align: center;
+
+                    color: #333333;
+                }
+
+                p {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 160%;
+                    /* identical to box height, or 26px */
+
+                    text-align: center;
+
+                    color: #B1B1B1;
+                }
+            }
+
+            .form {
+                margin: 1px auto;
+
+                .form-floating {
+                    label {
+                        font-weight: bold;
+                        color: black;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 27px;
+
+                    }
+
+                    textarea {
+                        height: 130px;
+                        border-radius: 0px;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                    }
+
+                    input {
+
+                        border-radius: 0px;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        margin: 0px 0px;
+                    }
+
+                }
+
+            }
+        }
+
+    
+
+    }
+
+
+
+}

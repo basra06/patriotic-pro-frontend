@@ -8,6 +8,8 @@ import { Search } from "./componants/Search";
 import { Searchpage } from "./Pages/Searchpage";
 import { Login } from "./componants/Login";
 import { Enquire } from "./Pages/Enquire";
+import { UpdatePage } from "./Pages/UpdatePage";
+
 
 
 
@@ -20,6 +22,7 @@ function App() {
       <Route path="/search" element={<Searchpage/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/enquiry" element={<Enquire/>} />
+      <Route path="/update" element={<UpdatePage/>} />
     </Routes>
     </>
   );
