@@ -9,34 +9,16 @@ import sixth from "../assets/images/sliderimages/Mask group (6).png"
 import seven from "../assets/images/sliderimages/Mask group (7).png"
 import "../sass/global/global.css"
 import "../sass/industry/indestry.css"
+
 export const Industry = () => {
-
-
     function SamplePrevArrow(props) {
-
-
-     const[services,setservices]=useState(["Air Conditioning" ,
-     "Carpentry","Cleaning","Concrete","Drywall","Electrician",
-     "Fencing","Garage Door Installation","Handyman","Heating & Furnace","HVAC Contractors"
-    ,"HVAC Contractors","Landscaping","Painting","Pest Control","Plumbing","Remodeling","Roofing","Tile"])
-     
-     
-     
-     
-
-     
-
         const { className, style, onClick } = props;
-
         return (
-
-            <button
+           <button
                 className={className}
                 style={{ display: "block", color: "white", border: "none", cursor: 'pointer', borderRadius: "50%", width: "20px", height: "20px", position: 'absolute', background: "#D42443", top: 70, left: 10, zIndex: 700 }}
                 onClick={onClick}
             />
-
-
         );
     }
 
@@ -73,7 +55,19 @@ export const Industry = () => {
                     slidesToShow: 4,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: false
+                    dots: false,
+                    
+                }
+            },
+
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    initialSlide: 2,
+
+
                 }
             },
             {
@@ -81,7 +75,9 @@ export const Industry = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    initialSlide: 2
+                    initialSlide: 2,
+                    nextArrow:false,
+                    prevArrow:false,
                 }
             },
             {
@@ -90,6 +86,8 @@ export const Industry = () => {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     dots: false,
+                    nextArrow:false,
+                    prevArrow:false,
                 }
             }
         ]
@@ -154,8 +152,6 @@ export const Industry = () => {
                                 </div>
                             </div>
 
-
-
                             <div className='slider'>
                                 <div className="card " >
                                     <img className='image-fluid' src={sixth} />
@@ -165,8 +161,6 @@ export const Industry = () => {
                                 </div>
                             </div>
 
-
-
                             <div className='slider'>
                                 <div className="card " >
                                     <img className='image-fluid' src={seven} />
@@ -175,13 +169,7 @@ export const Industry = () => {
                                     <p>Fencing</p>
                                 </div>
                             </div>
-
                         </Slider>
-                        {/* </div> */}
-
-
-
-
                     </div>
                 </div>
             </div>

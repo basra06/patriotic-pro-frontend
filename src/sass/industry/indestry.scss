@@ -1,6 +1,5 @@
 .industrylist {
     width: 100%;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -41,8 +40,6 @@
             margin-bottom: 30px;
             color: #333333;
         }
-
-
         img {
             width: 56px;
             height: 58px;
@@ -50,7 +47,6 @@
             text-align: center;
             padding: 1px;
         }
-
     }
 
 
@@ -169,7 +165,6 @@
                 img {
                     width: 55.8px;
                     height: 47.7px;
-
                 }
 
                 &:hover {
@@ -203,10 +198,6 @@
             }
 
         }
-
-
-
-
 
     }
 }

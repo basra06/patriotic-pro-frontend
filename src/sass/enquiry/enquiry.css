@@ -2,19 +2,33 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  width: 100%;
 }
 .enquiry .container {
-  margin-top: 115px;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
-.enquiry .container .card-body {
+.enquiry .container .cardsinfo {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+.enquiry .container .cardsinfo .image img {
+  width: 100%;
+  height: cover;
+  border-radius: 10px;
+  height: 100%;
+  padding: 10px;
+}
+.enquiry .container .cardsinfo .card-body {
   margin: 0px;
   padding: 0px;
 }
-.enquiry .container .card-body .first {
+.enquiry .container .cardsinfo .card-body .firstsection {
   display: flex;
   justify-content: flex-start;
 }
-.enquiry .container .card-body .first h3 {
+.enquiry .container .cardsinfo .card-body .firstsection h3 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -26,19 +40,19 @@
   margin-left: 10px;
   cursor: pointer;
 }
-.enquiry .container .card-body .first h3:hover {
+.enquiry .container .cardsinfo .card-body .firstsection h3:hover {
   color: #D42443;
 }
-.enquiry .container .card-body .second {
+.enquiry .container .cardsinfo .card-body .secondsection {
   display: flex;
   justify-content: start;
 }
-.enquiry .container .card-body .second .icon i {
+.enquiry .container .cardsinfo .card-body .secondsection .icon i {
   margin: 4px 10px;
   font-size: 20px;
   color: #D42443;
 }
-.enquiry .container .card-body .second .detail {
+.enquiry .container .cardsinfo .card-body .secondsection .detail {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -46,11 +60,11 @@
   line-height: 160%;
   color: #B1B1B1;
 }
-.enquiry .container .card-body .thir {
+.enquiry .container .cardsinfo .card-body .thirsection {
   display: flex;
   justify-content: flex-start;
 }
-.enquiry .container .card-body .thir .question {
+.enquiry .container .cardsinfo .card-body .thirsection .question {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -59,21 +73,20 @@
   color: #163791;
   margin-left: 10px;
 }
-.enquiry .container .card-body .thir .answer {
+.enquiry .container .cardsinfo .card-body .thirsection .answer {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  /* identical to box height, or 26px */
   color: #333333;
   margin-left: 30px;
 }
-.enquiry .container .card-body .four {
+.enquiry .container .cardsinfo .card-body .fourection {
   display: flex;
   justify-content: flex-start;
 }
-.enquiry .container .card-body .four .question {
+.enquiry .container .cardsinfo .card-body .fourection .question {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -82,21 +95,20 @@
   margin-left: 10px;
   color: #163791;
 }
-.enquiry .container .card-body .four .answer {
+.enquiry .container .cardsinfo .card-body .fourection .answer {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  /* identical to box height, or 26px */
   color: #333333;
   margin-left: 30px;
 }
-.enquiry .container .card-body .fif {
+.enquiry .container .cardsinfo .card-body .fifthsection {
   display: flex;
   justify-content: flex-start;
 }
-.enquiry .container .card-body .fif .question {
+.enquiry .container .cardsinfo .card-body .fifthsection .question {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -105,53 +117,402 @@
   margin-left: 10px;
   color: #163791;
 }
-.enquiry .container .card-body .fif .answer {
+.enquiry .container .cardsinfo .card-body .fifthsection .answer {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  /* identical to box height, or 26px */
   color: #333333;
   margin-left: 30px;
 }
-.enquiry .container .secondsection .card-body h5 {
+.enquiry .container .cardsecondsection .card-body h5 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 33px;
-  /* identical to box height */
   color: #333333;
   margin-left: 30px;
   margin-top: 25px;
 }
-.enquiry .container .secondsection .card-body .f {
+.enquiry .container .cardsecondsection .card-body .f {
   margin-left: 30px;
   margin-right: 21px;
   margin-top: 13px;
 }
-.enquiry .container .secondsection .card-body p {
+.enquiry .container .cardsecondsection .card-body p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 180%;
-  /* or 29px */
   color: #333333;
 }
-.enquiry .container .secondsection .card-body .s {
+.enquiry .container .cardsecondsection .card-body .s {
   margin-left: 30px;
   margin-right: 21px;
   margin-top: 15px;
   margin-bottom: 33px;
 }
-.enquiry .container .secondsection .card-body .s p {
+.enquiry .container .cardsecondsection .card-body .s p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 180%;
-  /* or 29px */
   color: #333333;
+}
+
+@media screen and (min-width: 500px) and (max-width: 778px) {
+  .enquiry {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .enquiry .container {
+    margin-top: 65px;
+    margin-bottom: 35px;
+  }
+  .enquiry .container .cardsinfo {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+  }
+  .enquiry .container .cardsinfo .image {
+    background-color: white;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .enquiry .container .cardsinfo .image img {
+    width: 200px;
+    height: 150px;
+    border-radius: 50% 50%;
+    margin-top: 10px;
+  }
+  .enquiry .container .cardsinfo .card-body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .enquiry .container .cardsinfo .card-body .firstsection {
+    display: flex;
+    justify-content: center;
+  }
+  .enquiry .container .cardsinfo .card-body .firstsection h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #163791;
+    margin-top: 14px;
+    margin-left: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .enquiry .container .cardsinfo .card-body .firstsection h3:hover {
+    color: #D42443;
+  }
+  .enquiry .container .cardsinfo .card-body .secondsection {
+    display: flex;
+    justify-content: start;
+    margin: 10px 20px;
+  }
+  .enquiry .container .cardsinfo .card-body .secondsection .icon i {
+    margin: 4px 10px;
+    font-size: 20px;
+    color: #D42443;
+  }
+  .enquiry .container .cardsinfo .card-body .secondsection .detail {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: #B1B1B1;
+  }
+  .enquiry .container .cardsinfo .card-body .thirsection {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 20px;
+  }
+  .enquiry .container .cardsinfo .card-body .thirsection .question {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #163791;
+    margin-left: 10px;
+  }
+  .enquiry .container .cardsinfo .card-body .thirsection .answer {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #333333;
+    margin-left: 10px;
+  }
+  .enquiry .container .cardsinfo .card-body .fourection {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 20px;
+  }
+  .enquiry .container .cardsinfo .card-body .fourection .question {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    margin-left: 10px;
+    color: #163791;
+  }
+  .enquiry .container .cardsinfo .card-body .fourection .answer {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #333333;
+    margin-left: 10px;
+  }
+  .enquiry .container .cardsinfo .card-body .fifthsection {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 20px;
+  }
+  .enquiry .container .cardsinfo .card-body .fifthsection .question {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    margin-left: 10px;
+    color: #163791;
+  }
+  .enquiry .container .cardsinfo .card-body .fifthsection .answer {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #333333;
+    margin-left: 10px;
+  }
+  .enquiry .container .secondsection .card-body h5 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #333333;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+  .enquiry .container .secondsection .card-body .f {
+    margin-left: 30px;
+    margin-right: 21px;
+    margin-top: 13px;
+  }
+  .enquiry .container .secondsection .card-body p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #333333;
+  }
+  .enquiry .container .secondsection .card-body .s {
+    margin-left: 30px;
+    margin-right: 21px;
+    margin-top: 15px;
+    margin-bottom: 33px;
+  }
+  .enquiry .container .secondsection .card-body .s p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #333333;
+  }
+}
+@media screen and (max-width: 500px) {
+  .enquiry {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .enquiry .container {
+    margin-top: 35px;
+    margin-bottom: 60px;
+  }
+  .enquiry .container .cardsinfo {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+  }
+  .enquiry .container .cardsinfo .image {
+    background-color: white;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .enquiry .container .cardsinfo .image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50% 50%;
+    margin-top: 10px;
+  }
+  .enquiry .container .cardsinfo .card-body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .enquiry .container .cardsinfo .card-body .firstsection {
+    display: flex;
+    justify-content: center;
+  }
+  .enquiry .container .cardsinfo .card-body .firstsection h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #163791;
+    margin-top: 14px;
+    margin-left: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .enquiry .container .cardsinfo .card-body .firstsection h3:hover {
+    color: #D42443;
+  }
+  .enquiry .container .cardsinfo .card-body .secondsection {
+    display: flex;
+    justify-content: start;
+    margin: 10px 20px;
+  }
+  .enquiry .container .cardsinfo .card-body .secondsection .icon i {
+    margin: 4px 10px;
+    font-size: 20px;
+    color: #D42443;
+  }
+  .enquiry .container .cardsinfo .card-body .secondsection .detail {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: #B1B1B1;
+  }
+  .enquiry .container .cardsinfo .card-body .thirsection {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 20px;
+  }
+  .enquiry .container .cardsinfo .card-body .thirsection .question {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #163791;
+    margin-left: 10px;
+  }
+  .enquiry .container .cardsinfo .card-body .thirsection .answer {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #333333;
+    margin-left: 10px;
+  }
+  .enquiry .container .cardsinfo .card-body .fourection {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 20px;
+  }
+  .enquiry .container .cardsinfo .card-body .fourection .question {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    margin-left: 10px;
+    color: #163791;
+  }
+  .enquiry .container .cardsinfo .card-body .fourection .answer {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #333333;
+    margin-left: 10px;
+  }
+  .enquiry .container .cardsinfo .card-body .fifthsection {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 20px;
+  }
+  .enquiry .container .cardsinfo .card-body .fifthsection .question {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    margin-left: 10px;
+    color: #163791;
+  }
+  .enquiry .container .cardsinfo .card-body .fifthsection .answer {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #333333;
+    margin-left: 10px;
+  }
+  .enquiry .container .secondsection .card-body h5 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #333333;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+  .enquiry .container .secondsection .card-body .f {
+    margin-left: 30px;
+    margin-right: 21px;
+    margin-top: 13px;
+  }
+  .enquiry .container .secondsection .card-body p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #333333;
+  }
+  .enquiry .container .secondsection .card-body .s {
+    margin-left: 30px;
+    margin-right: 21px;
+    margin-top: 15px;
+    margin-bottom: 33px;
+  }
+  .enquiry .container .secondsection .card-body .s p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #333333;
+  }
 }/*# sourceMappingURL=enquiry.css.map */

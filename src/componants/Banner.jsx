@@ -5,21 +5,15 @@ import { NavLink } from "react-router-dom"
 import logo from "../assets/images/footerimage/Transparent-white 1.png"
 import axios from 'axios';
 export const Banner = () => {
-  
   const[services,setservices]=useState(["Air Conditioning" ,
   "Carpentry","Cleaning","Concrete","Drywall","Electrician",
   "Fencing","Garage Door Installation","Handyman","Heating & Furnace","HVAC Contractors"
  ,"HVAC Contractors","Landscaping","Painting","Pest Control","Plumbing","Remodeling","Roofing","Tile"]);
 
- console.log(services);
  const[servise,setservice]=useState("");
   
  const [data, setdata] = useState([]);
  const [state, setstate] = useState("");
-
-
-//  const [active, setactive] = useState(true);
-
 
  useEffect(() => {
 
@@ -53,38 +47,28 @@ export const Banner = () => {
         <div className="bannersection">
           <div className="row ">
             <div className="col-lg-10  mx-auto ">
-              <div className="tex">
-
+              <div className="bannerheading">
                 <div className="logoimage">
                   <img src={logo} className="image-fluid" />
                 </div>
                 <h1>Find Patriotic-pros for your home project.</h1>
                 <p>You love America, Hire a Pro that does too. Free for Pros, Free for Homeowners.</p>
-
-
                 <div className="conatiner w-100 ">
                   <div className='options'>
-
-
-                    <div  className="first ">
+                    <div  className="firstsection ">
                       <select onChange={(e)=>{setservice(e.target.value)}}    name="select" className='form-select ' id="select" >
                        <option selected value="" >Services</option>
                       {
-                            services.map((val, ind) => {
+                      services.map((val, ind) => {
                               return (
-
                                 <option value={val}> {val}</option>
-
-
                               )
                             })
                           }
                       </select>
                     </div>
-
-                    
-                   
-                    <div className="seacond">
+ 
+                    <div className="seacondsection">
                       <select onChange={(e)=>{setstate(e.target.value)}} name="select" className='form-select ' id="select" >
                         <option selected value="">States</option>
                         {
@@ -92,35 +76,21 @@ export const Banner = () => {
                               return (
 
                                 <option value={val.state}> {val.state} </option>
-
-
                               )
                             })
                           }
                       </select>
                     </div>
-
-
-
-                    <span className="but ">
+                    <span className="searchbutton ">
                      <button className='btn-danger'><NavLink to="/search">Search </NavLink></button> 
                     </span>
 
                   </div>
                 </div>
-
-
-
-
-
               </div>
             </div>
-
           </div>
         </div>
-
-
-
       </div>
 
     </>

@@ -28,12 +28,6 @@ export const Infobanner = () => {
 
      </div>
 
-
-
-
-
-
-
      <div className="modal fade " id="loginmodal" tabindex="-1" >
         <div className="modal-dialog ">
           <div className="modal-content">

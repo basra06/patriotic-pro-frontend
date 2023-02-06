@@ -3,9 +3,7 @@ import axios from 'axios';
 import "../sass/state/state.css"
 
 export const State = () => {
-  
     const[data,setdata]=useState([]);
-
     useEffect(()=>{
         getStat();
     },[]);
@@ -29,17 +27,14 @@ export const State = () => {
       
     
     }
-  
-    console.log(data);
-
-  console.log(data);
+ 
   return (
     <>
     <div className="states">
         <div className="container ">
             <div className="row  ">
 
-               <div className="text">
+               <div className="Stateheading">
                 <h2>All states list</h2>
                 <p>You love America, Hire a Pro that does too. Free for Pros, Free for Homeowners.</p>
 
@@ -49,25 +44,18 @@ export const State = () => {
                       
                         return(
                            
-                              <div className="col-lg-2 col-md-4 col-4 mt-1 mb-1 p-1 credits">
+                              <div className="col-lg-2 col-md-4 col-6 mt-1 mb-1 p-1 mx-auto credits">
                              <span className='flagdata '>
                         <img  className='image-fluid'  src={val.state_flag_url} />
                          <a href="#">  {val.state}</a> 
                     </span>
                     </div>
-
-                    
-                         
+      
                         )
                       
                      })
                 }
-
-
- <h6 className='text-center  '>View All States</h6> 
-
-                   
-
+                  <h6 className='text-center  '>View All States</h6> 
             </div>
         </div>
     </div>

@@ -1,18 +1,15 @@
 import React from 'react'
-import { Enquiry } from '../componants/Enquiry'
 import { Footer } from '../componants/Footer'
 import { Navbar } from '../componants/Navbar'
+import { Update } from '../componants/Update'
 
-export const Enquire = () => {
+export const UpdatePage = () => {
   return (
     <>
+    <Navbar/>
+ <Update/>
+ <Footer/>
     
-    
-        <Navbar/> 
-
-        <Enquiry/>
-        <Footer/>
-       
     </>
   )
 }

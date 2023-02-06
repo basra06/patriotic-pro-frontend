@@ -14,15 +14,15 @@ export const Home = () => {
   return (
     <>
         <Logo/>
-        <div className="navbarsection sticky-top  ">
+       
         <Navbar/> 
-        </div>     
+            
       <Banner/> 
      <Industry/>
     <State/>
     <Infobanner/>
     <Contact/>  
-    <Footer/>
+    <Footer/> 
     {/* <Enquiry/> */}
     </>
   )
