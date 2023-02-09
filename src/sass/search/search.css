@@ -20,7 +20,7 @@
 }
 .search .container .row h6 {
   margin-top: 15px;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -55,7 +55,7 @@
   margin-top: 10px;
 }
 .search .container .row .boxes .filtersection .form-check .form-check-label {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -142,7 +142,7 @@
   margin-left: 4px;
 }
 .search .container .row .detail .card .card-body .secondsection .location span {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -157,7 +157,7 @@
 }
 .search .container .row .detail .card .card-body .thirdsection p {
   margin-top: 9px;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -167,7 +167,7 @@
   color: #163791;
 }
 .search .container .row .detail .card .card-body .fourthsection p {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -208,7 +208,7 @@
     border: none;
     border-radius: 0px;
     font-size: 18px;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -227,7 +227,7 @@
     font-size: 16px;
     font-weight: 600;
     font-style: normal;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     color: #212529;
   }
   .mobileview .container .row .filtersection .row .filter .state .dropdown {
@@ -239,7 +239,7 @@
     color: #D42443;
     border-radius: 0px;
     font-size: 18px;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -257,11 +257,11 @@
     font-size: 16px;
     font-weight: 600;
     font-style: normal;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     color: #212529;
   }
   .mobileview .container .row .fourthsection p {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -311,7 +311,7 @@
     color: #333333;
   }
   .mobileview .container .row h6 {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -383,7 +383,7 @@
     margin-right: 2px;
   }
   .mobileview .container .row .card-body .secondsection .location span {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -398,7 +398,7 @@
   }
   .mobileview .container .row .card-body .thirdsection p {
     margin-top: 9px;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
