@@ -24,7 +24,7 @@
   color: #333333;
 }
 .industrylist .textdata p {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -62,7 +62,7 @@
   margin: 4px auto;
 }
 .industrylist .texthead p {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -104,7 +104,7 @@
     margin-left: 23px;
     margin-right: 23px;
     font-weight: bold;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -140,7 +140,7 @@
     color: #D42443;
   }
   .industrylist .texthead p {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

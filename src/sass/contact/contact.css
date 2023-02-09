@@ -22,7 +22,7 @@
 .contact .container .row p {
   color: #333333;
   text-align: center;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -34,7 +34,7 @@
   width: 100%;
 }
 .contact .container .row .form-floating label {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -42,7 +42,7 @@
   color: #333333;
 }
 .contact .container .row .form-floating label .fw-bold {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -50,7 +50,7 @@
   color: #333333;
 }
 .contact .container .row .form-floating .fw-bold {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -74,7 +74,7 @@
     margin: 0px auto;
   }
   .contact .container .row .para p {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     margin-left: 50px;
     margin-right: 50px;
     font-style: normal;
@@ -106,7 +106,7 @@
     margin-top: 0px;
   }
   .contact .container .row .form-floating label {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -114,7 +114,7 @@
     color: #333333;
   }
   .contact .container .row .form-floating label .fw-bold {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -122,7 +122,7 @@
     color: #333333;
   }
   .contact .container .row .form-floating .fw-bold {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 16px;

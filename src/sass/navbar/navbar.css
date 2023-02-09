@@ -45,7 +45,7 @@
 .desktop .navbar .navbar-collapse .navbar-nav .nav-item {
   padding: 0px 6px;
   font-size: 16px;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   line-height: 200%;
@@ -64,7 +64,7 @@
   color: #D42443;
 }
 .desktop .navbar .navbar-collapse .navbar-nav .nav-item a {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -73,7 +73,7 @@
 }
 .desktop .navbar .navbar-collapse .navbar-nav .nav-item .select {
   font-size: 16px;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   border: none;
@@ -91,7 +91,7 @@
   color: #000000;
   font-weight: 600;
   font-size: 16px;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   line-height: 200%;
 }
 .desktop .navbar .navbar-collapse .navbar-nav .nav-item .btn-danger {
@@ -102,7 +102,7 @@
   background: #D42443;
   border-radius: 10px;
   color: white;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -156,7 +156,7 @@
   .tablet .navbar .navbar-collapse .navbar-nav .nav-item {
     padding: 0px 6px;
     font-size: 16px;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -178,7 +178,7 @@
     color: #D42443;
   }
   .tablet .navbar .navbar-collapse .navbar-nav .nav-item a {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -187,7 +187,7 @@
   }
   .tablet .navbar .navbar-collapse .navbar-nav .nav-item .select {
     font-size: 16px;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 700;
     border: none;
@@ -204,7 +204,7 @@
     color: #000000;
     font-weight: 700;
     font-size: 16px;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
   }
 }
 @media screen and (max-width: 500px) {
@@ -233,7 +233,7 @@
     display: block;
     padding: 10px 10px;
     margin: 5px 0px;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -270,7 +270,7 @@
   .mobile .navbar .bu button a {
     text-decoration: none;
     color: white;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -349,7 +349,7 @@
   padding: none;
 }
 .modal .modal-dialog .modal-body .col-form-label {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-size: 18px;
   color: black;
   font-weight: 600;
@@ -358,14 +358,14 @@
 }
 .modal .modal-dialog .modal-body h6 {
   text-align: right;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
 }
 .modal .modal-dialog .modal-body h6 a {
   color: #163791;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
@@ -390,7 +390,7 @@
   cursor: pointer;
 }
 .modal .modal-dialog .modal-body .im .browse .form-label {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-size: 16px;
   color: #333333;
 }
@@ -398,7 +398,7 @@
   text-decoration: none;
   text-align: center;
   font-weight: 600;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-size: 16px;
   color: #163791;
   cursor: pointer;
@@ -408,7 +408,7 @@
   text-align: left;
 }
 .modal .modal-dialog .modal-footer .btn-danger {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -423,7 +423,7 @@
   color: #333333;
   font-size: 18px;
   margin-left: 30px;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

@@ -25,7 +25,7 @@
   font-weight: 700;
 }
 .states .row .Stateheading p {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -40,7 +40,7 @@
   height: 16px;
 }
 .states .row .credits .flagdata a {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -86,7 +86,7 @@
     font-weight: 700;
   }
   .states .row .Stateheading p {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -154,7 +154,7 @@
     font-weight: 700;
   }
   .states .row .Stateheading p {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
