@@ -7,7 +7,7 @@ import { Search } from '../componants/Search'
 export const Searchpage = () => {
   return (
     <>
-<Navbar/>
+<Navbar />
 <Search/>
 <Footer/>
     </>

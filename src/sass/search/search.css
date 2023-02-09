@@ -8,16 +8,13 @@
   margin: 0;
   padding: 0;
 }
-.search .container .row {
-  margin-bottom: 60px;
-}
 .search .container .row h2 {
+  margin-top: 55px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
   line-height: 51px;
-  margin-top: 55px;
   text-transform: uppercase;
   color: #333333;
 }
@@ -28,12 +25,20 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
   text-transform: uppercase;
   color: #333333;
 }
 .search .container .row .boxes {
   margin-top: 30px;
+}
+.search .container .row .boxes p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #B1B1B1;
+  font-size: 16px;
 }
 .search .container .row .boxes .filtersection p {
   margin-top: 20px;
@@ -45,6 +50,17 @@
   line-height: 24px;
   cursor: pointer;
   color: #D42443;
+}
+.search .container .row .boxes .filtersection .form-check {
+  margin-top: 10px;
+}
+.search .container .row .boxes .filtersection .form-check .form-check-label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
 }
 .search .container .row .boxes .ind .view {
   margin-top: 20px;
@@ -61,14 +77,14 @@
 .search .container .row .detail {
   margin-top: 30px;
 }
-.search .container .row .card {
+.search .container .row .detail .card {
   background: #FFFFFF;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   margin-bottom: 40px;
   width: 100%;
   height: auto;
 }
-.search .container .row .card img {
+.search .container .row .detail .card img {
   margin-top: 14px;
   margin-left: 11px;
   margin-bottom: 11px;
@@ -76,15 +92,15 @@
   width: 155px;
   height: 233px;
 }
-.search .container .row .card-body {
+.search .container .row .detail .card .card-body {
   margin: 0px;
   padding: 0px;
 }
-.search .container .row .card-body .firstsection {
+.search .container .row .detail .card .card-body .firstsection {
   display: flex;
   justify-content: space-between;
 }
-.search .container .row .card-body .firstsection h3 {
+.search .container .row .detail .card .card-body .firstsection h3 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -95,10 +111,10 @@
   margin-left: 4px;
   cursor: pointer;
 }
-.search .container .row .card-body .firstsection h3:hover {
+.search .container .row .detail .card .card-body .firstsection h3:hover {
   color: #D42443;
 }
-.search .container .row .card-body .firstsection .btn-danger {
+.search .container .row .detail .card .card-body .firstsection .btn-danger {
   width: 140px;
   height: 48px;
   background: #D42443;
@@ -106,49 +122,51 @@
   margin-top: 16px;
   margin-right: 15px;
 }
-.search .container .row .card-body .firstsection .btn-danger a {
+.search .container .row .detail .card .card-body .firstsection .btn-danger a {
   color: white;
   text-decoration: none;
 }
-.search .container .row .card-body .firstsection .btn-danger:hover {
+.search .container .row .detail .card .card-body .firstsection .btn-danger:hover {
   background-color: #e73b5b;
   transition: 0.3s;
 }
-.search .container .row .card-body .firstsection .btn-danger span {
+.search .container .row .detail .card .card-body .firstsection .btn-danger span {
   margin: 0px 3px;
 }
-.search .container .row .card-body .firstsection .btn-danger span i {
+.search .container .row .detail .card .card-body .firstsection .btn-danger span i {
   font-size: 10px;
 }
-.search .container .row .card-body .secondsection {
-  display: flex;
-  justify-content: start;
+.search .container .row .detail .card .card-body .secondsection {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 4px;
 }
-.search .container .row .card-body .secondsection .icon i {
-  margin: 4px 10px;
-  font-size: 20px;
-  color: #D42443;
-}
-.search .container .row .card-body .secondsection .detail {
+.search .container .row .detail .card .card-body .secondsection .location span {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
   color: #B1B1B1;
-  margin-top: 5px;
+  margin-left: 0px;
 }
-.search .container .row .card-body .thirdsection p {
+.search .container .row .detail .card .card-body .secondsection .location span i {
+  margin-right: 12px;
+  font-size: 20px;
+  color: #D42443;
+}
+.search .container .row .detail .card .card-body .thirdsection p {
   margin-top: 9px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
+  margin-left: 4px;
   /* identical to box height, or 26px */
   color: #163791;
 }
-.search .container .row .card-body .fourthsection p {
+.search .container .row .detail .card .card-body .fourthsection p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -161,151 +179,186 @@
   color: #333333;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 790px) {
   .search {
-    width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
     display: none;
   }
   .mobileview {
     display: block;
     width: 100%;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
-  .mobileview .row .fourthsection p {
+  .mobileview .container {
+    margin-bottom: 40px;
+  }
+  .mobileview .container .row .filtersection {
+    margin: 10px auto;
+  }
+  .mobileview .container .row .filtersection .row {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .mobileview .container .row .filtersection .row .filter {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .mobileview .container .row .filtersection .row .filter .industry .dropdown button {
+    background-color: white;
+    border: none;
+    border-radius: 0px;
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0px;
+    color: #D42443;
+    /* identical to box height */
+    text-transform: capitalize;
+    justify-content: flex-start;
+  }
+  .mobileview .container .row .filtersection .row .filter .industry .dropdown .dropdown-menu {
+    margin-top: 40px;
+  }
+  .mobileview .container .row .filtersection .row .filter .industry .dropdown .dropdown-item {
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Open Sans";
+    color: #212529;
+  }
+  .mobileview .container .row .filtersection .row .filter .state .dropdown {
+    margin-left: 40px;
+  }
+  .mobileview .container .row .filtersection .row .filter .state .dropdown button {
+    background-color: white;
+    border: none;
+    color: #D42443;
+    border-radius: 0px;
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0px;
+    /* identical to box height */
+    text-transform: capitalize;
+    justify-content: flex-start;
+  }
+  .mobileview .container .row .filtersection .row .filter .state .dropdown .dropdown-menu {
+    margin-top: 40px;
+  }
+  .mobileview .container .row .filtersection .row .filter .state .dropdown .dropdown-item {
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Open Sans";
+    color: #212529;
+  }
+  .mobileview .container .row .fourthsection p {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
+    font-size: 14px;
+    line-height: 180%;
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 25px;
+    margin-left: 12px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     text-align: justify;
-    /* or 26px */
     color: black;
   }
-  .mobileview .row .but {
+  .mobileview .container .row .but {
     text-align: center;
   }
-  .mobileview .row .but .btn-danger {
+  .mobileview .container .row .but .btn-danger {
     width: 160px;
     height: 40px;
     background: #D42443;
     border-radius: 10px;
     margin-top: 0px;
     margin-right: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
-  .mobileview .row .but .btn-danger a {
+  .mobileview .container .row .but .btn-danger a {
     color: white;
     text-decoration: none;
   }
-  .mobileview .row .but .btn-danger:hover {
+  .mobileview .container .row .but .btn-danger:hover {
     background-color: #e73b5b;
     transition: 0.3s;
   }
-  .mobileview .row .but .btn-danger span {
+  .mobileview .container .row .but .btn-danger span {
     margin: 0px 3px;
   }
-  .mobileview .row .but .btn-danger span i {
+  .mobileview .container .row .but .btn-danger span i {
     font-size: 10px;
   }
-  .mobileview .row h2 {
+  .mobileview .container .row h2 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 51px;
+    line-height: 30px;
     margin-top: 25px;
     margin-left: 10px;
     text-transform: uppercase;
     color: #333333;
   }
-  .mobileview .row h6 {
-    margin-top: 15px;
+  .mobileview .container .row h6 {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     margin-left: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     /* identical to box height */
     text-transform: uppercase;
     color: #333333;
   }
-  .mobileview .row .boxes {
-    margin-top: 0px;
-    display: none;
-    justify-content: space-between;
-  }
-  .mobileview .row .boxes .ser p {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-    cursor: pointer;
-    color: #D42443;
-  }
-  .mobileview .row .boxes .ind .view {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-    cursor: pointer;
-    color: #D42443;
-  }
-  .mobileview .row .detail {
-    margin-top: 30px;
-  }
-  .mobileview .row .card {
+  .mobileview .container .row .card {
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     margin-bottom: 40px;
     width: 100%;
+    margin-left: 10px;
+    margin: 0px 4px;
   }
-  .mobileview .row .card img {
-    margin-top: 14px;
-    margin-left: 11px;
-    margin-bottom: 11px;
+  .mobileview .container .row .card img {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
     margin-right: 0px;
     width: 100%;
-    height: 200px;
+    border-radius: 5px;
+    height: 150px;
   }
-  .mobileview .row .card-body {
+  .mobileview .container .row .card-body {
     margin: 0px;
     padding: 0px;
   }
-  .mobileview .row .card-body .firstsection h3 {
+  .mobileview .container .row .card-body .firstsection h3 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 33px;
+    line-height: 20px;
     color: #163791;
-    margin-top: 14px;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
     cursor: pointer;
   }
-  .mobileview .row .card-body .firstsection h3:hover {
+  .mobileview .container .row .card-body .firstsection h3:hover {
     color: #D42443;
   }
-  .mobileview .row .card-body .firstsection .btn-danger {
+  .mobileview .container .row .card-body .firstsection .btn-danger {
     width: 140px;
     height: 48px;
     background: #D42443;
@@ -313,40 +366,42 @@
     margin-top: 16px;
     margin-right: 15px;
   }
-  .mobileview .row .card-body .firstsection .btn-danger:hover {
+  .mobileview .container .row .card-body .firstsection .btn-danger:hover {
     background-color: #e73b5b;
     transition: 0.3s;
   }
-  .mobileview .row .card-body .firstsection .btn-danger span {
+  .mobileview .container .row .card-body .firstsection .btn-danger span {
     margin: 0px 3px;
   }
-  .mobileview .row .card-body .firstsection .btn-danger span i {
+  .mobileview .container .row .card-body .firstsection .btn-danger span i {
     font-size: 10px;
   }
-  .mobileview .row .card-body .secondsection .icon {
-    display: none;
-    text-align: center;
+  .mobileview .container .row .card-body .secondsection {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 2px;
   }
-  .mobileview .row .card-body .secondsection .icon i {
-    margin: 2px auto;
-    font-size: 22px;
-    color: #D42443;
-  }
-  .mobileview .row .card-body .secondsection .location p {
+  .mobileview .container .row .card-body .secondsection .location span {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 160%;
-    margin-right: 3px;
+    line-height: 120%;
     color: #B1B1B1;
+    margin-left: 0px;
   }
-  .mobileview .row .card-body .thirdsection p {
+  .mobileview .container .row .card-body .secondsection .location span i {
+    margin-right: 12px;
+    font-size: 18px;
+    color: #D42443;
+  }
+  .mobileview .container .row .card-body .thirdsection p {
     margin-top: 9px;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 160%;
     /* identical to box height, or 26px */
     color: #163791;

@@ -8,14 +8,11 @@ export const Contact = () => {
 
       <div className="contact ">
         <div className="container">
-
           <div className="row ">
             <h2>Get in touch</h2>
           <div className="contacttext">
           <p >You love America, Hire a Pro that does too. Free for Pros, Free for Homeowners.</p>
           </div>
-
-
 
             <div className="col-lg-5 col-md-6 col-sm-12  ">
               <div className="image ">
@@ -49,13 +46,11 @@ export const Contact = () => {
                     </div>
                   </div>
 
-
                   <div className="col-lg-6 col-md-6 col-sm-12 ">
                     <div className="form-floating">
                       <textarea  className="form-control " placeholder="Leave a comment here" ></textarea>
                       <label htmlFor="floatingTextarea" className=' fw-bold'>Message</label>
                     </div>
-
                   </div>
 
                   <div className="butt mt-2 mb-2 p-2">
@@ -65,10 +60,6 @@ export const Contact = () => {
 
               </div>
             </div>
-
-
-
-
 
           </div>
 

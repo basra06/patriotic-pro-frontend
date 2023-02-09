@@ -54,13 +54,6 @@
   text-align: center;
   justify-content: center;
 }
-.industrylist .card img {
-  width: 62px;
-  height: 64px;
-  border-radius: 50%;
-  text-align: center;
-  padding: 2px;
-}
 .industrylist .card:hover {
   background-color: #D42443;
   transition: 0.2s ease-in-out;

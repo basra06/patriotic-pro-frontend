@@ -120,7 +120,7 @@ export const Enquiry = () => {
               <div style={{
                 background: "#FFFFFF",
                 boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.15)"
-              }} className="cont p-2">
+              }} className="p-2">
 
                 <h3 className='text-center mt-5  mb-5'>Contact Texas Denture Care</h3>
 

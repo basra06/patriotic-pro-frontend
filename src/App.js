@@ -1,4 +1,4 @@
-import { Check } from "./componants/Check";
+
 import { Navbar } from "./componants/Navbar";
 import "./sass/global/global.css"
 import { Routes,Route} from 'react-router-dom';
@@ -9,6 +9,7 @@ import { Searchpage } from "./Pages/Searchpage";
 import { Login } from "./componants/Login";
 import { Enquire } from "./Pages/Enquire";
 import { UpdatePage } from "./Pages/UpdatePage";
+import "../src/App.css";
 
 
 
