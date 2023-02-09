@@ -22,7 +22,7 @@
   font-weight: 700;
 }
 .infobanner .container .row .tex p {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -35,7 +35,7 @@
   margin-bottom: 154px;
   padding: 5px;
   font-size: 18px;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
 }
 .infobanner .container .row .tex .but button {
   width: 140px;
@@ -75,7 +75,7 @@
     color: #FFFFFF;
   }
   .infobanner .container .row .tex p {
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -88,7 +88,7 @@
     text-align: center;
     margin-top: 25px;
     margin-bottom: 48px;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
   }
   .infobanner .container .row .tex .but button {
     width: 95px;
@@ -120,7 +120,7 @@
   .infobanner .container .row .tex .but {
     text-align: center;
     font-size: 16px;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
   }
   .infobanner .container .row .tex .but button {
     width: 95px;
@@ -128,7 +128,7 @@
     color: white;
     font-weight: bold;
     font-size: 14px;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
     background: #D42443;
     border-radius: 10px;
   }
