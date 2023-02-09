@@ -140,10 +140,10 @@ const searchData=()=>{
                 <div className="conatiner w-100 mobileview ">
                   <div className='options'>
                      
-                     {services==="" ?
+                     {/* {services==="" ? */}
                      <>
                       <div  className="firstsection ">
-                      <select onChange={(e)=>{setservice(e.target.value)}}    name="select" className='form-select ' id="select" >
+                      <select onChange={(e)=>{setservices(e.target.value)}}    name="select" className='form-select ' id="select" >
                        <option selected value="" >Services</option>
                       {
                       services.map((val, ind) => {
@@ -154,6 +154,8 @@ const searchData=()=>{
                           }
                       </select>
                     </div>
+                     </>
+                     {/* } */}
                     <span onClick={searchData} className="searchbutton" style={{cursor:'pointer'}}>
                      <button  className='btn-danger'>
                         Search 
@@ -162,15 +164,6 @@ const searchData=()=>{
 
                   </div>
                 </div>
-
-
-
-
-                
-
-
-
-
               </div>
             </div>
           </div>
