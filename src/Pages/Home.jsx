@@ -1,6 +1,5 @@
 import React from 'react'
 import { Banner } from '../componants/Banner'
-import { Check } from '../componants/Check'
 import { Contact } from '../componants/Contact'
 import { Enquiry } from '../componants/Enquiry'
 import { Footer } from '../componants/Footer'

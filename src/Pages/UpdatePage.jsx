@@ -6,9 +6,9 @@ import { Update } from '../componants/Update'
 export const UpdatePage = () => {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
  <Update/>
- <Footer/>
+ {/* <Footer/> */}
     
     </>
   )

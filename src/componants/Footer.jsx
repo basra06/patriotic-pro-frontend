@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="container ">
              <div className="row">
                 <div className="image text-center">
-                    <img src={logo}/>
+                    <img src={logo} alt=""/>
                 </div>
                <div className="para">
                <p>© 2023 Patrioticpro.com | Privacy Policy | Cookies Policy | Terms of Service</p>
@@ -19,51 +19,43 @@ export const Footer = () => {
 
 
 
-  <div className=" text-center">
+  <div className="text-center justify">
      
-      <a
-        className="btn text-white btn-floating m-1"
-       
-        href="#"
-        role="button"
-        ><i className="fa fa-facebook-f"></i
-      ></a>
+      <a className="btn text-white"
+       href="#"
+      
+        ><i className="fa fa-facebook-f"></i></a>
 
  
-      <a
-        className="btn text-white btn-floating m-1"
+      <a className="btn text-white "
        
-        href="#!"
-        role="button"
-        ><i className="fa fa-twitter"></i
-      ></a>
+        href="#"
+       
+        ><i className="fa fa-twitter"></i></a>
 
       <a
-        className="btn text-white btn-floating m-1"
+        className="btn text-white  "
        
-        href="#!"
-        role="button"
-        ><i className="fa fa-google"></i
-      ></a>
+        href="#"
+       
+        ><i className="fa fa-google"></i></a>
 
       
     
 
       
       <a
-        className="btn text-white btn-floating m-1"
+        className="btn text-white btn-floating "
        
         href="#"
-        role="button"
-        ><i className="fa fa-linkedin"></i
-      ></a>
+      
+        ><i className="fa fa-linkedin"></i></a>
     
       <a
-        className="btn text-white btn-floating m-1"
+        className="btn text-white btn-floating "
         href="#"
-        role="button"
-        ><i className="fa fa-github"></i
-      ></a>
+       
+        ><i className="fa fa-github"></i></a>
     </div>
              </div>
         </div>

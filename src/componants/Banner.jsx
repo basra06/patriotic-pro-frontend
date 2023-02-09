@@ -39,6 +39,7 @@ export const Banner = () => {
 
 
  }
+ console.log(servise);
   
   return (
     <>
@@ -70,23 +71,90 @@ export const Banner = () => {
  
                     <div className="seacondsection">
                       <select onChange={(e)=>{setstate(e.target.value)}} name="select" className='form-select ' id="select" >
-                        <option selected value="">States</option>
-                        {
-                            data.map((val, ind) => {
-                              return (
+                      <option selected value="">States</option>
+                      {
+                          data.map((val, ind) => {
+                            return (
 
-                                <option value={val.state}> {val.state} </option>
+                              <option value={val.state}> {val.state} </option>
+                            )
+                          })
+                        }
+                    </select>
+                     
+                    </div>
+
+                    <span className="searchbutton ">
+                     <button className='btn-danger'>
+                       <NavLink to="/search"> 
+                        Search 
+                         </NavLink>
+                        </button> 
+                    </span>
+
+                  </div>
+                </div>
+
+
+
+                <div className="conatiner w-100 mobileview ">
+                  <div className='options'>
+                     
+                     {services==="" ?
+                     <>
+                      <div  className="firstsection ">
+                      <select onChange={(e)=>{setservice(e.target.value)}}    name="select" className='form-select ' id="select" >
+                       <option selected value="" >Services</option>
+                      {
+                      services.map((val, ind) => {
+                              return (
+                                <option value={val}> {val}</option>
                               )
                             })
                           }
                       </select>
                     </div>
+                    </>: <> 
+                    <div className="seacondsection">
+                  <select onChange={(e)=>{setstate(e.target.value)}} name="select" className='form-select ' id="select" >
+                  <option selected value="">States</option>
+                  {
+                      data.map((val, ind) => {
+                        return (
+
+                          <option value={val.state}> {val.state} </option>
+                        )
+                      })
+                    }
+                </select>
+                 
+                </div>
+                </>
+                }
+                   
+                   
+                
+                   
+
                     <span className="searchbutton ">
-                     <button className='btn-danger'><NavLink to="/search">Search </NavLink></button> 
+                     <button className='btn-danger'>
+                       <NavLink to="/search"> 
+                        Search 
+                         </NavLink>
+                        </button> 
                     </span>
 
                   </div>
                 </div>
+
+
+
+
+                
+
+
+
+
               </div>
             </div>
           </div>

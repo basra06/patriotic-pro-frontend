@@ -26,10 +26,14 @@
   border-radius: 50%;
   border: 1px solid white;
   cursor: pointer;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  margin: 0px 5px;
 }
 .footer .row .text-center a i {
-  font-size: 15px;
-  width: 20px;
+  text-align: center;
+  margin: auto;
 }
 .footer .row .text-center a i:hover {
   background-color: white;
@@ -70,25 +74,20 @@
     color: #FFFFFF;
     opacity: 0.85;
   }
-  .footer .row .text-center {
+  .footer .row .justify {
     margin-bottom: 50px;
   }
-  .footer .row .text-center a {
-    padding: 3px;
+  .footer .row .justify a {
     background-color: #163791;
     border-radius: 50%;
     border: 1px solid white;
     cursor: pointer;
   }
-  .footer .row .text-center a i {
-    font-size: 16px;
-    width: 20px;
-  }
-  .footer .row .text-center a i:hover {
+  .footer .row .justify a i:hover {
     background-color: white;
     color: #163791;
   }
-  .footer .row .text-center a:hover {
+  .footer .row .justify a:hover {
     background-color: white;
     color: #163791;
   }

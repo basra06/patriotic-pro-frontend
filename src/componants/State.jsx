@@ -44,7 +44,7 @@ export const State = () => {
                       
                         return(
                            
-                              <div className="col-lg-2 col-md-4 col-6 mt-1 mb-1 p-1 mx-auto credits">
+                              <div className="col-lg-2 col-md-4 col-6 mt-1 mb-1 p-1  credits">
                              <span className='flagdata '>
                         <img  className='image-fluid'  src={val.state_flag_url} />
                          <a href="#">  {val.state}</a> 
@@ -55,7 +55,7 @@ export const State = () => {
                       
                      })
                 }
-                  <h6 className='text-center  '>View All States</h6> 
+                  <h6 className='text-center d-none '>View All States</h6> 
             </div>
         </div>
     </div>
