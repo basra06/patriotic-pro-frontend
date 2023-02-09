@@ -14,14 +14,14 @@ export const Home = () => {
     <>
         <Logo/>
        
-        <Navbar/> 
+        {/* <Navbar/>  */}
             
       <Banner/> 
      <Industry/>
     <State/>
     <Infobanner/>
     <Contact/>  
-    <Footer/> 
+    {/* <Footer/>  */}
     {/* <Enquiry/> */}
     </>
   )

@@ -4,47 +4,87 @@ import "../sass/banner/banner.css"
 import { NavLink } from "react-router-dom"
 import logo from "../assets/images/footerimage/Transparent-white 1.png"
 import axios from 'axios';
-export const Banner = () => {
-  const[services,setservices]=useState(["Air Conditioning" ,
-  "Carpentry","Cleaning","Concrete","Drywall","Electrician",
-  "Fencing","Garage Door Installation","Handyman","Heating & Furnace","HVAC Contractors"
- ,"HVAC Contractors","Landscaping","Painting","Pest Control","Plumbing","Remodeling","Roofing","Tile"]);
+import { getStates } from '../api/server'
+import { useDispatch, useSelector } from 'react-redux'
+import { get_UnitedStates_states } from '../Redux-Store/actions'
+import { createSearchParams, useNavigate } from "react-router-dom";
 
- const[servise,setservice]=useState("");
+
+export const Banner = () => {
+  const dispatch = useDispatch()
+  const navigate = useNavigate();
+  const storeState = useSelector(state => state.US_states.country_states);
+  const[services,setservices]=useState([
+    "Air Conditioning" ,
+    "Carpentry",
+    "Cleaning",
+    "Concrete",
+    "Drywall",
+    "Electrician",
+    "Fencing",
+    "Garage Door Installation",
+    "Handyman",
+    "Heating & Furnace",
+    "HVAC Contractors",
+    "Landscaping",
+    "Painting",
+    "Pest Control",
+    "Plumbing",
+    "Remodeling",
+    "Roofing",
+    "Tile"]);
+
+ const[search,setSearch]=useState({
+  states:[],
+  industry:[]
+ });
   
  const [data, setdata] = useState([]);
  const [state, setstate] = useState("");
-
+ const setValue=(e)=>{
+  let setData={...search}
+  if(e.target.name==="states"){
+    if(e.target.value===''){
+      setData[e.target.name]=[]
+    }else{
+    setData[e.target.name]=[e.target.value]
+  }
+  }
+  if(e.target.name==="industry"){
+    if(e.target.value===''){
+      setData[e.target.name]=[]
+    }else{
+    setData[e.target.name]=[e.target.value]
+  }
+  }
+  setSearch(setData)
+ }
+const searchData=()=>{
+  navigate({
+    pathname: "/search",
+    search: createSearchParams({
+        state: search.states.join(','),
+        services:search.industry.join(','),
+        page:1
+    }).toString(),
+    state:search
+});
+}
  useEffect(() => {
 
-    getStat()
+    // getStat()
+    if(storeState.length===0){
+    getStates().then(x=>{
+      console.log(x,'yes')
+      dispatch(get_UnitedStates_states(x.data.data))
+    })
+  }
  }, []);
- const getStat = () => {
-   axios.get('https://raw.githubusercontent.com/CivilServiceUSA/us-states/master/data/states.json')
-     .then(function (response) {
-       // setdata(response.data);
-       console.log(response.data);
-       console.log(data);
-       setdata(response.data);
-       console.log(data);
-
-     })
-     .catch(function (error) {
-       // handle error
-       console.log(error);
-     })
-     .finally(function () {
-
-     });
-
-
- }
- console.log(servise);
   
   return (
     <>
-
       <div className='banner'>
+        {console.log(search)}
         <div className="bannersection">
           <div className="row ">
             <div className="col-lg-10  mx-auto ">
@@ -57,7 +97,7 @@ export const Banner = () => {
                 <div className="conatiner w-100 ">
                   <div className='options'>
                     <div  className="firstsection ">
-                      <select onChange={(e)=>{setservice(e.target.value)}}    name="select" className='form-select ' id="select" >
+                      <select onChange={(e)=>{setValue(e)}}    name="industry" className='form-select ' id="select" >
                        <option selected value="" >Services</option>
                       {
                       services.map((val, ind) => {
@@ -70,11 +110,11 @@ export const Banner = () => {
                     </div>
  
                     <div className="seacondsection">
-                      <select onChange={(e)=>{setstate(e.target.value)}} name="select" className='form-select ' id="select" >
-                      <option selected value="">States</option>
-                      {
-                          data.map((val, ind) => {
-                            return (
+                      <select onChange={(e)=>{setValue(e)}} name="states" className='form-select ' id="select" >
+                        <option selected value="">States</option>
+                        {
+                            storeState.length>0&&storeState.map((val, ind) => {
+                              return (
 
                               <option value={val.state}> {val.state} </option>
                             )
@@ -114,33 +154,9 @@ export const Banner = () => {
                           }
                       </select>
                     </div>
-                    </>: <> 
-                    <div className="seacondsection">
-                  <select onChange={(e)=>{setstate(e.target.value)}} name="select" className='form-select ' id="select" >
-                  <option selected value="">States</option>
-                  {
-                      data.map((val, ind) => {
-                        return (
-
-                          <option value={val.state}> {val.state} </option>
-                        )
-                      })
-                    }
-                </select>
-                 
-                </div>
-                </>
-                }
-                   
-                   
-                
-                   
-
-                    <span className="searchbutton ">
-                     <button className='btn-danger'>
-                       <NavLink to="/search"> 
+                    <span onClick={searchData} className="searchbutton" style={{cursor:'pointer'}}>
+                     <button  className='btn-danger'>
                         Search 
-                         </NavLink>
                         </button> 
                     </span>
 

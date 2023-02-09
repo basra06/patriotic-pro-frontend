@@ -16,7 +16,7 @@ export const Industry = () => {
         return (
            <button
                 className={className}
-                style={{ display: "block", color: "white", border: "none", cursor: 'pointer', borderRadius: "50%", width: "20px", height: "20px", position: 'absolute', background: "#D42443", top: 70, left: 10, zIndex: 700 }}
+                style={{ ...style,display: "block", color: "white", border: "none", cursor: 'pointer', borderRadius: "50%", width: "20px", height: "20px", position: 'absolute', background: "#D42443", top: 70, left: 10, zIndex: 700 }}
                 onClick={onClick}
             />
         );
@@ -28,7 +28,7 @@ export const Industry = () => {
         return (
             <div
                 className={className}
-                style={{ display: "block", color: "white", border: "none", cursor: 'pointer', borderRadius: "50%", width: "20px", height: "20px", position: 'absolute', background: "#D42443", top: 70, right: 10, zIndex: 700 }}
+                style={{ ...style, display: "block", color: "white", border: "none", cursor: 'pointer', borderRadius: "50%", width: "20px", height: "20px", position: 'absolute', background: "#D42443", top: 70, right: 10, zIndex: 700 }}
                 onClick={onClick}
             />
         );

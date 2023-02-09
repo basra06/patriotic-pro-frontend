@@ -8,10 +8,10 @@ export const Enquire = () => {
     <>
     
     
-        <Navbar/> 
+        {/* <Navbar/>  */}
 
         <Enquiry/>
-        <Footer/>
+        {/* <Footer/> */}
        
     </>
   )
