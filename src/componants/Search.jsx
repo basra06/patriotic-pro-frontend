@@ -1,13 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../sass/search/search.css"
 import "../sass/global/global.css"
 import person from "../assets/images/search/unsplash_yEYmnaFuYVM.png"
 import { Link } from 'react-router-dom'
+import { getSearchData } from '../api/server'
+import { useDispatch } from 'react-redux'
+import { set_Filter_Data } from '../Redux-Store/actions'
+import { useSearchParams } from "react-router-dom";
 
-export const Search = () => {
+export const Search = (props) => {
+  const dispatch = useDispatch()
+  const [searchData, setSearchData] = useState({
+    states:[],
+    industry:[],
+  })
+  const [page, setPage] = useState(0)
+  let [searchParams, setSearchParams] = useSearchParams({});
+  // const SearchAPI=async()=>{
+  //   console.log(props.industry,'lllllllll')
+  //   if(props){
+  //   let searchTheData={
+  //     states:props.state.split(",")[0]!==""?props.state.split(","):searchData.states,
+  //     industry:props.industry.split(",")[0]!==""?props.industry.split(","):searchData.industry,
+  //   }
+  //   let page={
+  //     page:parseInt(props.page)
+  //   }
+  //   setSearchData(searchTheData)
+  //   dispatch(set_Filter_Data(Object.assign(searchData, page)))
+  //   setPage(props.page)
+  //   console.log(searchTheData)
+  //   // if(searchData){
+  //   await getSearchData(props.page,searchData)
+  //   .then(x=>{
+  //       console.log(x,'searchData')
+  //     })
+  //   // }
+  // }
+    
+    
+  // }
+  useEffect(() => {
+    // SearchAPI()
+  }, [])
+  
   return (
     <>
-
+    {console.log(searchParams.get("__firebase_request_key"),'DataGetIt')}
       <div className="search">
         <div className="container ">
           <div className="row ">
