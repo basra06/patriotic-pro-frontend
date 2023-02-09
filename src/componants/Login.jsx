@@ -52,7 +52,7 @@
 //       </div> */}
 //       <h1>hamza</h1>
 
-//       <Footer/>
+      // <Footer/>
     
     
 //     </>

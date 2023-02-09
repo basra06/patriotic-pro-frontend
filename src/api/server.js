@@ -1,19 +1,19 @@
 import axios from "axios"
-import { parseClassName } from "react-toastify/dist/utils"
+import { get_UnitedStates_states } from "../Redux-Store/actions"
+const BaseUrl= "http://localhost:9000/"
 
-// login api
-export const Login=(parms, body)=>{
-    axios.get(localhost/parseClassName, body).then({
-        
-    })
-        
-    
+let instance = axios.create({
+    baseURL: "http://localhost:9000/",
+    headers: {
+        'Content-Type': 'application/json'
+    }
+})
+// US country States api
+export const getStates=()=>{
+    return instance.get(`states`)
 }
-
-export const sdgag=(parms, body,sud)=>{
-    axios.get(localhost/parseClassName, body).then({
-        
-    })
-        
-        
+// search api 
+export const getSearchData=(params,body)=>{
+    console.log(params,body)
+    return instance.post(`get-search-data/${params}`, body)
 }
